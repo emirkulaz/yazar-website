@@ -2,70 +2,226 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&display=swap" rel="stylesheet">
     <title>Fotoğraflar - Asma Azreug</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <header class="hero">
+
+<div class="lang-switch">
+    <a href="#" class="lang-tab" onclick="changeLang('ar', this); return false;">
+        <img src="cezayir-bayrak.png" alt="Arapça">
+    </a>
+
+    <a href="#" class="lang-tab" onclick="changeLang('tr', this); return false;">
+        <img src="turkiye-bayrak.png" alt="Türkçe">
+    </a>
+
+    <a href="#" class="lang-tab" onclick="changeLang('fr', this); return false;">
+        <img src="fransa-bayrak.png" alt="Fransızca">
+    </a>
+</div>
+    </div>
+
     <div class="hero-left">
         <h1>ASMA AZREUG</h1>
-        <p>yazar tercüman gezgin🌍</p>
+        <p id="hero-text">yazar tercüman gezgin</p>
     </div>
 
     <div class="hero-center">
-        <img src="yazar-foto.png" alt="Asma Azreug">
+        <img src="esma4.png" alt="Asma Azreug">
     </div>
 
     <div class="hero-right">
-      <a href="index.html" class="menu-btn anasayfa">anasayfa</a>
-      <a href="iletisim.html" class="menu-btn iletisim">iletişim</a>
-      <a href="biography.html" class="menu-btn biyografi">biografi</a>
-      <a href="eserler.html" class="menu-btn eserler">eserler</a>
-      <a href="haberler.html" class="menu-btn haberler">haberler</a>
-      <a href="roportajlar.html" class="menu-btn roportajlar">röportajlar</a>
-      <a href="oduller.html" class="menu-btn oduller">ödüller</a>
-      <a href="fotolar.html" class="menu-btn fotolar active">fotoğraflar</a>
+        <a href="index.html" class="menu-btn anasayfa" id="menu-home">anasayfa</a>
+        <a href="iletisim.html" class="menu-btn iletisim" id="menu-contact">iletişim</a>
+        <a href="biography.html" class="menu-btn biyografi" id="menu-bio">biografi</a>
+        <a href="eserler.html" class="menu-btn eserler" id="menu-books">eserler</a>
+        <a href="haberler.html" class="menu-btn haberler" id="menu-news">haberler</a>
+        <a href="roportajlar.html" class="menu-btn roportajlar" id="menu-interviews">röportajlar</a>
+        <a href="oduller.html" class="menu-btn oduller" id="menu-awards">ödüller</a>
+        <a href="fotolar.html" class="menu-btn fotolar active" id="menu-photos">fotoğraflar</a>
     </div>
+
 </header>
 
-<section class="fotograflar-section">
-    <h2>Fotoğraflar</h2>
+<div class="home-simple">
+    <div class="home-left gallery-wrap" style="width: 100%;">
+        <h2 id="title">Fotoğraflar</h2>
 
-    <div class="foto-galeri">
-        <img src="esma2.jpg" alt="Esma 2">
-        <img src="esma3.png" alt="Esma 3">
-        <img src="esma4.png" alt="Esma 4">
-        <img src="esma5.png" alt="Esma 5">
-        <img src="esma6.jpeg" alt="Esma 6">
-        <img src="esma7.jpeg" alt="Esma 7">
-        <img src="esma8.jpeg" alt="Esma 8">
-        <img src="esma9.png" alt="Esma 9">
-        <img src="esma10.png" alt="Esma 10">
-        
+        <div class="foto-galeri">
+            <img src="esma2.jpg" alt="Asma Azreug Fotoğraf 1">
+            <img src="esma3.png" alt="Asma Azreug Fotoğraf 2">
+            <img src="esma4.png" alt="Asma Azreug Fotoğraf 3">
+            <img src="esma5.png" alt="Asma Azreug Fotoğraf 4">
+            <img src="esma6.jpeg" alt="Asma Azreug Fotoğraf 5">
+            <img src="esma7.jpeg" alt="Asma Azreug Fotoğraf 6">
+            <img src="esma8.jpeg" alt="Asma Azreug Fotoğraf 7">
+            <img src="esma9.png" alt="Asma Azreug Fotoğraf 8">
+            <img src="esma10.png" alt="Asma Azreug Fotoğraf 9">
+            <img src="esma11.png" alt="Asma Azreug Fotoğraf 10">
+            <img src="esma12.png" alt="Asma Azreug Fotoğraf 11">
+            <img src="esma13.png" alt="Asma Azreug Fotoğraf 12">
+            <img src="esma14.png" alt="Asma Azreug Fotoğraf 13">
+            <img src="esma15.png" alt="Asma Azreug Fotoğraf 14">
+        </div>
     </div>
-</section>
+</div>
+<script>
+const translations = {
+  tr: {
+    title: "Fotoğraflar",
+    heroText: "yazar tercüman gezgin",
+    menuHome: "anasayfa",
+    menuContact: "iletişim",
+    menuBio: "biografi",
+    menuBooks: "eserler",
+    menuNews: "haberler",
+    menuInterviews: "röportajlar",
+    menuAwards: "ödüller",
+    menuPhotos: "fotoğraflar",
+    footerContact: "İletişim",
+    footerTranslation: "Tercümanlık Desteği",
+    footerBooks: "Eserler",
+    footerPhotos: "Fotoğraflar",
+    footerInterviews: "Röportajlar",
+    footerAwards: "Ödüller",
+    footerNews: "Haberler"
+  },
+  fr: {
+    title: "Photos",
+    heroText: "écrivaine traductrice voyageuse",
+    menuHome: "accueil",
+    menuContact: "contact",
+    menuBio: "biographie",
+    menuBooks: "œuvres",
+    menuNews: "actualités",
+    menuInterviews: "entretiens",
+    menuAwards: "prix",
+    menuPhotos: "photos",
+    footerContact: "Contact",
+    footerTranslation: "Soutien en traduction",
+    footerBooks: "Œuvres",
+    footerPhotos: "Photos",
+    footerInterviews: "Entretiens",
+    footerAwards: "Prix",
+    footerNews: "Actualités"
+  },
+  ar: {
+    title: "الصور",
+    heroText: "كاتبة مترجمة رحّالة",
+    menuHome: "الرئيسية",
+    menuContact: "اتصال",
+    menuBio: "السيرة الذاتية",
+    menuBooks: "الأعمال",
+    menuNews: "الأخبار",
+    menuInterviews: "المقابلات",
+    menuAwards: "الجوائز",
+    menuPhotos: "الصور",
+    footerContact: "اتصال",
+    footerTranslation: "دعم الترجمة",
+    footerBooks: "الأعمال",
+    footerPhotos: "الصور",
+    footerInterviews: "المقابلات",
+    footerAwards: "الجوائز",
+    footerNews: "الأخبار"
+  }
+};
+
+function changeLang(lang, el) {
+  document.querySelectorAll(".lang-tab").forEach(tab => {
+    tab.classList.remove("active");
+  });
+
+  if (el) el.classList.add("active");
+
+  localStorage.setItem("siteLang", lang);
+
+  document.getElementById("title").innerText = translations[lang].title;
+  document.getElementById("hero-text").innerText = translations[lang].heroText;
+  document.getElementById("menu-home").innerText = translations[lang].menuHome;
+  document.getElementById("menu-contact").innerText = translations[lang].menuContact;
+  document.getElementById("menu-bio").innerText = translations[lang].menuBio;
+  document.getElementById("menu-books").innerText = translations[lang].menuBooks;
+  document.getElementById("menu-news").innerText = translations[lang].menuNews;
+  document.getElementById("menu-interviews").innerText = translations[lang].menuInterviews;
+  document.getElementById("menu-awards").innerText = translations[lang].menuAwards;
+  document.getElementById("menu-photos").innerText = translations[lang].menuPhotos;
+
+  document.getElementById("footer-contact").innerText = translations[lang].footerContact;
+  document.getElementById("footer-translation").innerText = translations[lang].footerTranslation;
+  document.getElementById("footer-books").innerText = translations[lang].footerBooks;
+  document.getElementById("footer-photos").innerText = translations[lang].footerPhotos;
+  document.getElementById("footer-interviews").innerText = translations[lang].footerInterviews;
+  document.getElementById("footer-awards").innerText = translations[lang].footerAwards;
+  document.getElementById("footer-news").innerText = translations[lang].footerNews;
+
+  document.documentElement.lang = lang;
+if (lang === "ar") {
+  document.documentElement.lang = "ar";
+
+  document.getElementById("title").style.direction = "rtl";
+  document.getElementById("title").style.textAlign = "right";
+  document.getElementById("hero-text").style.direction = "rtl";
+  document.getElementById("hero-text").style.textAlign = "right";
+
+  document.querySelector(".hero-right").style.direction = "rtl";
+  document.querySelector(".hero-right").style.textAlign = "right";
+  document.querySelector(".menu-buttons").style.direction = "rtl";
+  document.querySelector(".menu-buttons").style.textAlign = "right";
+
+} else {
+  document.documentElement.lang = lang;
+
+  document.getElementById("title").style.direction = "ltr";
+  document.getElementById("title").style.textAlign = "left";
+  document.getElementById("hero-text").style.direction = "ltr";
+  document.getElementById("hero-text").style.textAlign = "left";
+
+  document.querySelector(".hero-right").style.direction = "ltr";
+  document.querySelector(".hero-right").style.textAlign = "left";
+  document.querySelector(".menu-buttons").style.direction = "ltr";
+  document.querySelector(".menu-buttons").style.textAlign = "left";
+}
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+  const savedLang = localStorage.getItem("siteLang") || "tr";
+
+  document.querySelectorAll(".lang-tab").forEach(tab => {
+    const onclickText = tab.getAttribute("onclick") || "";
+    if (onclickText.includes(`changeLang('${savedLang}'`)) {
+      changeLang(savedLang, tab);
+    }
+  });
+});
+</script>
 
 <div class="bottom-strip">
-    <nav class="menu-buttons">
-        <a href="iletisim.html" class="bar">İletişim</a>
-        <span class="divider">I</span>
-        <a href="tercumanlik.html" class="bar">Tercümanlık Desteği</a>
-        <span class="divider">I</span>
-        <a href="eserler.html" class="bar">Eserler</a>
-        <span class="divider">I</span>
-        <a href="fotolar.html" class="bar">Fotoğraflar</a>
-        <span class="divider">I</span>
-        <a href="roportajlar.html" class="bar">Röportajlar</a>
-        <span class="divider">I</span>
-        <a href="oduller.html" class="bar">Ödüller</a>
-        <span class="divider">I</span>
-        <a href="haberler.html" class="bar">Haberler</a>
-    </nav>
+    <div class="bottom-inner">
+        <nav class="menu-buttons">
+            <a href="iletisim.html" class="bar" id="footer-contact">İletişim</a>
+            <span class="divider">I</span>
+            <a href="tercumanlik.html" class="bar" id="footer-translation">Tercümanlık Desteği</a>
+            <span class="divider">I</span>
+            <a href="eserler.html" class="bar" id="footer-books">Eserler</a>
+            <span class="divider">I</span>
+            <a href="fotolar.html" class="bar" id="footer-photos">Fotoğraflar</a>
+            <span class="divider">I</span>
+            <a href="roportajlar.html" class="bar" id="footer-interviews">Röportajlar</a>
+            <span class="divider">I</span>
+            <a href="oduller.html" class="bar" id="footer-awards">Ödüller</a>
+            <span class="divider">I</span>
+            <a href="haberler.html" class="bar" id="footer-news">Haberler</a>
+        </nav>
+
+        <div class="powered-text">powered by Emir Kulaz</div>
+    </div>
 </div>
 
 </body>
