@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Röportajlar - Asma Azreug</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,9 +12,24 @@
 <body>
 
 <header class="hero">
+
+<div class="lang-switch">
+    <a href="#" class="lang-tab" onclick="changeLang('ar', this); return false;">
+        <img src="cezayir-bayrak.png" alt="Arapça">
+    </a>
+
+    <a href="#" class="lang-tab" onclick="changeLang('tr', this); return false;">
+        <img src="turkiye-bayrak.png" alt="Türkçe">
+    </a>
+
+    <a href="#" class="lang-tab" onclick="changeLang('fr', this); return false;">
+        <img src="fransa-bayrak.png" alt="Fransızca">
+    </a>
+</div>
+
     <div class="hero-left">
         <h1>ASMA AZREUG</h1>
-        <p>yazar tercüman gezgin 🌍</p>
+        <p id="hero-text">yazar tercüman gezgin</p>
     </div>
 
     <div class="hero-center">
@@ -21,41 +37,208 @@
     </div>
 
     <div class="hero-right">
-        <a href="index.html" class="menu-btn anasayfa">anasayfa</a>
-        <a href="iletisim.html" class="menu-btn iletisim">iletişim</a>
-        <a href="biography.html" class="menu-btn biyografi">biografi</a>
-        <a href="eserler.html" class="menu-btn eserler">eserler</a>
-        <a href="haberler.html" class="menu-btn haberler">haberler</a>
-        <a <a href="roportajlar.html" class="menu-btn roportajlar active">röportajlar</a>
-        <a href="oduller.html" class="menu-btn oduller">ödüller</a>
-        <a href="fotolar.html" class="menu-btn fotolar">fotoğraflar</a>
+        <a href="index.html" class="menu-btn anasayfa" id="menu-home">anasayfa</a>
+        <a href="iletisim.html" class="menu-btn iletisim" id="menu-contact">iletişim</a>
+        <a href="biography.html" class="menu-btn biyografi" id="menu-bio">biografi</a>
+        <a href="eserler.html" class="menu-btn eserler" id="menu-books">eserler</a>
+        <a href="haberler.html" class="menu-btn haberler" id="menu-news">haberler</a>
+        <a href="roportajlar.html" class="menu-btn roportajlar active" id="menu-interviews">röportajlar</a>
+        <a href="oduller.html" class="menu-btn oduller" id="menu-awards">ödüller</a>
+        <a href="fotolar.html" class="menu-btn fotolar" id="menu-photos">fotoğraflar</a>
     </div>
 </header>
 
 <div class="top-strip"></div>
 
-<section>
-    <h2>Röportajlar</h2>
-    <p>Yazarın röportajları buraya gelecek.</p>
+<section class="roportaj-grid">
+
+<div class="roportaj-item left">
+    <div class="video-container">
+        <a href="https://www.youtube.com/watch?v=C_tDUFJ2ZQQ&t=1855s" target="_blank">
+            <img src="https://img.youtube.com/vi/C_tDUFJ2ZQQ/hqdefault.jpg" alt="Röportaj 1">
+        </a>
+    </div>
+
+    <div class="video-text">
+        <h3 id="video1-title">TRT 1</h3>
+        <p id="video1-text">Kültür Pusulası’nda bu hafta Yazar Fatmanur Tülümen, Piyanist Şeymanur Aydın, Şair Tuana Yüksel, Sanat Yönetmeni Tamer Barış Ülger ve Yazar Asma Azreug konuk oluyor.</p>
+    </div>
+
+    <div class="side-feature-photo">
+        <img src="headerfoto.png" alt="Röportaj Kolajı">
+    </div>
+</div>
+
+<div class="roportaj-item right">
+
+    <div class="mini-collage">
+        <img src="roportaj1.png" class="mini-photo m1" alt="Röportaj detay 1">
+        <img src="roportaj2.png" class="mini-photo m2" alt="Röportaj detay 2">
+        <img src="roportaj3.png" class="mini-photo m3" alt="Röportaj detay 3">
+        <img src="roportaj4.png" class="mini-photo m4" alt="Röportaj detay 4">
+    </div>
+
+    <div class="video-text">
+        <h3 id="video2-title">Kitaba Dair</h3>
+        <p id="video2-text">Kitaba Dair kanalının konuğu değerli Yazar Asma AZREUG. Kitapları ve yazma yolcuğuna hakkında çıkmış olduğumuz bu yolculuğa siz de davetlisiniz.</p>
+    </div>
+
+    <div class="video-container">
+        <a href="https://www.youtube.com/watch?v=b7lD2JvkNZI" target="_blank">
+            <img src="https://img.youtube.com/vi/b7lD2JvkNZI/hqdefault.jpg" alt="Röportaj 2">
+        </a>
+    </div>
+</div>
+    </div>
+
 </section>
 
 <div class="bottom-strip">
     <nav class="menu-buttons">
-        <a href="iletisim.html" class="bar">İletişim</a>
+        <a href="iletisim.html" class="bar" id="footer-contact">İletişim</a>
         <span class="divider">I</span>
-        <a href="tercumanlik.html" class="bar">Tercümanlık Desteği</a>
+        <a href="tercumanlik.html" class="bar" id="footer-translation">Tercümanlık Desteği</a>
         <span class="divider">I</span>
-        <a href="eserler.html" class="bar">Eserler</a>
+        <a href="eserler.html" class="bar" id="footer-books">Eserler</a>
         <span class="divider">I</span>
-        <a href="fotolar.html" class="bar">Fotoğraflar</a>
+        <a href="fotolar.html" class="bar" id="footer-photos">Fotoğraflar</a>
         <span class="divider">I</span>
-        <a href="roportajlar.html" class="bar">Röportajlar</a>
+        <a href="roportajlar.html" class="bar" id="footer-interviews">Röportajlar</a>
         <span class="divider">I</span>
-        <a href="oduller.html" class="bar">Ödüller</a>
+        <a href="oduller.html" class="bar" id="footer-awards">Ödüller</a>
         <span class="divider">I</span>
-        <a href="haberler.html" class="bar">Haberler</a>
+        <a href="haberler.html" class="bar" id="footer-news">Haberler</a>
     </nav>
+    
 </div>
+
+<script>
+const translations = {
+    tr: {
+        heroText: "yazar tercüman gezgin",
+        menuHome: "anasayfa",
+        menuContact: "iletişim",
+        menuBio: "biografi",
+        menuBooks: "eserler",
+        menuNews: "haberler",
+        menuInterviews: "röportajlar",
+        menuAwards: "ödüller",
+        menuPhotos: "fotoğraflar",
+        video1Title: "TRT 1",
+        video1Text: "Kültür Pusulası’nda bu hafta Yazar Fatmanur Tülümen, Piyanist Şeymanur Aydın, Şair Tuana Yüksel, Sanat Yönetmeni Tamer Barış Ülger ve Yazar Asma Azreug konuk oluyor.",
+        video2Title: "Kitaba Dair",
+        video2Text: "Kitaba Dair kanalının konuğu değerli Yazar Asma AZREUG. Kitapları ve yazma yolcuğuna hakkında çıkmış olduğumuz bu yolculuğa siz de davetlisiniz.",
+        footerContact: "İletişim",
+        footerTranslation: "Tercümanlık Desteği",
+        footerBooks: "Eserler",
+        footerPhotos: "Fotoğraflar",
+        footerInterviews: "Röportajlar",
+        footerAwards: "Ödüller",
+        footerNews: "Haberler"
+    },
+    fr: {
+        heroText: "écrivaine traductrice voyageuse",
+        menuHome: "accueil",
+        menuContact: "contact",
+        menuBio: "biographie",
+        menuBooks: "œuvres",
+        menuNews: "actualités",
+        menuInterviews: "entretiens",
+        menuAwards: "prix",
+        menuPhotos: "photos",
+        video1Title: "TRT 1",
+        video1Text: "Cette semaine dans Kültür Pusulası, l’écrivaine Fatmanur Tülümen, la pianiste Şeymanur Aydın, la poétesse Tuana Yüksel, le directeur artistique Tamer Barış Ülger et l’écrivaine Asma Azreug sont invitées.",
+        video2Title: "À propos du livre",
+        video2Text: "L’invitée de la chaîne Kitaba Dair est la précieuse écrivaine Asma AZREUG. Vous êtes également invités à ce voyage autour de ses livres et de son parcours d’écriture.",
+        footerContact: "Contact",
+        footerTranslation: "Soutien en traduction",
+        footerBooks: "Œuvres",
+        footerPhotos: "Photos",
+        footerInterviews: "Entretiens",
+        footerAwards: "Prix",
+        footerNews: "Actualités"
+    },
+    ar: {
+        heroText: "كاتبة مترجمة رحّالة",
+        menuHome: "الرئيسية",
+        menuContact: "اتصال",
+        menuBio: "السيرة الذاتية",
+        menuBooks: "الأعمال",
+        menuNews: "الأخبار",
+        menuInterviews: "المقابلات",
+        menuAwards: "الجوائز",
+        menuPhotos: "الصور",
+        video1Title: "TRT 1",
+        video1Text: "في برنامج بوصلة الثقافة هذا الأسبوع، تستضيف الحلقة الكاتبة فاتمانور توليومن، وعازفة البيانو شيمنور أيدن، والشاعرة توانا يوكسل، والمدير الفني تامر بارış أولغر، والكاتبة أسماء أزروغ.",
+        video2Title: "عن الكتاب",
+        video2Text: "ضيفة قناة كتابا دائر هي الكاتبة القديرة أسماء أزروغ. ندعوكم أنتم أيضًا إلى هذه الرحلة حول كتبها ومسيرتها في الكتابة.",
+        footerContact: "اتصال",
+        footerTranslation: "دعم الترجمة",
+        footerBooks: "الأعمال",
+        footerPhotos: "الصور",
+        footerInterviews: "المقابلات",
+        footerAwards: "الجوائز",
+        footerNews: "الأخبار"
+    }
+};
+
+function changeLang(lang, el) {
+    document.querySelectorAll(".lang-tab").forEach(tab => {
+        tab.classList.remove("active");
+    });
+
+    if (el) el.classList.add("active");
+
+    localStorage.setItem("siteLang", lang);
+
+    document.getElementById("hero-text").innerText = translations[lang].heroText;
+
+    document.getElementById("menu-home").innerText = translations[lang].menuHome;
+    document.getElementById("menu-contact").innerText = translations[lang].menuContact;
+    document.getElementById("menu-bio").innerText = translations[lang].menuBio;
+    document.getElementById("menu-books").innerText = translations[lang].menuBooks;
+    document.getElementById("menu-news").innerText = translations[lang].menuNews;
+    document.getElementById("menu-interviews").innerText = translations[lang].menuInterviews;
+    document.getElementById("menu-awards").innerText = translations[lang].menuAwards;
+    document.getElementById("menu-photos").innerText = translations[lang].menuPhotos;
+
+    document.getElementById("video1-title").innerText = translations[lang].video1Title;
+    document.getElementById("video1-text").innerText = translations[lang].video1Text;
+    document.getElementById("video2-title").innerText = translations[lang].video2Title;
+    document.getElementById("video2-text").innerText = translations[lang].video2Text;
+
+    document.getElementById("footer-contact").innerText = translations[lang].footerContact;
+    document.getElementById("footer-translation").innerText = translations[lang].footerTranslation;
+    document.getElementById("footer-books").innerText = translations[lang].footerBooks;
+    document.getElementById("footer-photos").innerText = translations[lang].footerPhotos;
+    document.getElementById("footer-interviews").innerText = translations[lang].footerInterviews;
+    document.getElementById("footer-awards").innerText = translations[lang].footerAwards;
+    document.getElementById("footer-news").innerText = translations[lang].footerNews;
+
+    document.documentElement.lang = lang;
+
+    if (lang === "ar") {
+        document.querySelectorAll(".video-text").forEach(item => {
+            item.style.direction = "rtl";
+            item.style.textAlign = "right";
+        });
+    } else {
+        document.querySelectorAll(".video-text").forEach(item => {
+            item.style.direction = "ltr";
+            item.style.textAlign = "left";
+        });
+    }
+}window.addEventListener("DOMContentLoaded", () => {
+    const savedLang = localStorage.getItem("siteLang") || "tr";
+
+    document.querySelectorAll(".lang-tab").forEach(tab => {
+        const onclickText = tab.getAttribute("onclick") || "";
+        if (onclickText.includes(`changeLang('${savedLang}'`)) {
+            changeLang(savedLang, tab);
+        }
+    });
+});
+</script>
 
 </body>
 </html>
