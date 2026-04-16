@@ -3,26 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
-    <title>Biografi- Asma Azreug</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!DOCTYPE html>
-<html lang="tr">
-<head>
-    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&display=swap" rel="stylesheet">
-    <title>Biography - Asma Azreug</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <title>Biografi - Asma Azreug</title>
 </head>
+
 <body>
 
 <header class="hero">
+<div class="lang-switch">
+
+    <a href="#" class="lang-tab" onclick="changeLang('ar', this); return false;">
+        <img src="cezayir-bayrak.png" alt="Arapça">
+    </a>
+
+    <a href="#" class="lang-tab" onclick="changeLang('tr', this); return false;">
+        <img src="turkiye-bayrak.png" alt="Türkçe">
+    </a>
+
+    <a href="#" class="lang-tab" onclick="changeLang('fr', this); return false;">
+        <img src="fransa-bayrak.png" alt="Fransızca">
+    </a>
+
+</div>
+
     <div class="hero-left">
         <h1>ASMA AZREUG</h1>
-        
+        <p id="hero-text">yazar tercüman gezgin</p>
     </div>
 
     <div class="hero-center">
@@ -30,76 +39,311 @@
     </div>
 
     <div class="hero-right">
-      <a href="index.html" class="menu-btn anasayfa">anasayfa</a>
-      <a href="iletisim.html" class="menu-btn iletisim">iletişim</a>
-      <a href="biography.html" class="menu-btn biyografi active">biografi</a>
-      <a href="eserler.html" class="menu-btn eserler">eserler</a>
-      <a href="haberler.html" class="menu-btn haberler">haberler</a>
-      <a href="roportajlar.html" class="menu-btn roportajlar">röportajlar</a>
-      <a href="oduller.html" class="menu-btn oduller">ödüller</a>
-      <a href="fotolar.html" class="menu-btn fotolar">fotoğraflar</a>
+        <a href="index.html" class="menu-btn anasayfa" id="menu-home">anasayfa</a>
+        <a href="iletisim.html" class="menu-btn iletisim" id="menu-contact">iletişim</a>
+        <a href="biography.html" class="menu-btn biyografi active" id="menu-bio">biografi</a>
+        <a href="eserler.html" class="menu-btn eserler" id="menu-books">eserler</a>
+        <a href="haberler.html" class="menu-btn haberler" id="menu-news">haberler</a>
+        <a href="roportajlar.html" class="menu-btn roportajlar" id="menu-interviews">röportajlar</a>
+        <a href="oduller.html" class="menu-btn oduller" id="menu-awards">ödüller</a>
+        <a href="fotolar.html" class="menu-btn fotolar" id="menu-photos">fotoğraflar</a>
     </div>
 </header>
-<!-- SAYFA İÇERİĞİ -->
-<section>
-    <h2>İletişim</h2>
-    <p>İletişim bilgileri buraya gelecek.</p>
-</section>
-
-<!-- ALT MENÜ -->
-<div class="bottom-strip">
-    ...
-</div>
-
-</body>
-</html>
 
 <div class="top-strip"></div>
 
-<section>
-    <h2>Biografi</h2>
-    <p>Yazarın fotoğrafları buraya gelecek.</p>
+<section class="bio-layout">
+
+    <aside class="photo-wall left-wall">
+        <div class="hanging-photo photo1">
+            <span class="pin"></span>
+            <img src="esmabio1.png" alt="Asma Azreug fotoğraf 1">
+        </div>
+
+        <div class="hanging-photo photo2">
+            <span class="pin"></span>
+            <img src="esmabio2.png" alt="Asma Azreug fotoğraf 2">
+        </div>
+
+        <div class="hanging-photo photo3">
+            <span class="pin"></span>
+            <img src="esmabio3.png" alt="Asma Azreug fotoğraf 3">
+        </div>
+
+        <div class="hanging-photo photo4">
+            <span class="pin"></span>
+            <img src="esmabio4.png" alt="Asma Azreug fotoğraf 4">
+        </div>
+    </aside>
+
+    <div class="bio-text">
+        <h2 id="bio-title">Biografi</h2>
+        <p id="bio-paragraph">
+            Asma Azreug; çoğunlukla sakin, fazla konuşmayan ve iç dünyasına dönük bir kişiliğe sahiptir.
+            Onun kendini rahatça ifade edebilmesi, üzerindeki çekingen ve tutuk hâli geride bırakabilmesi için
+            uygun ortamı yakalaması gerekir. Bu durum Asma’nın hayatında sıkça karşılaşılan bir özelliktir.
+
+            Anadolu insanına büyük bir sevgi besleyen Cezayirli bir yazardır. “Kaderin Kurbanı”, daha çok
+            duyguların akışıyla kaleme alınmış, aşk temasını işleyen bir romandır. Cezayir’de geniş bir okuyucu
+            kitlesi tarafından beğeniyle karşılanan yazar, Türk Büyükelçiliği tarafından da fark edilmiş ve
+            Sayın Büyükelçi tarafından bizzat tebrik edilerek kültür elçisi unvanına layık görülen ilk Cezayirli
+            olmuştur. Anadolu hakkında ilk bakışta sınırlı bilgiye sahip gibi görünse de, onunla tanıştığınızda
+            bu durumun ötesinde derin bir gözlem gücüne sahip olduğunu fark etmemek mümkün değildir. Bu eseriyle
+            gelecekte Cezayir edebiyatında önemli bir yere sahip olacağını söylemek abartı sayılmaz.
+
+            11 Eylül 1998 tarihinde Cezayir’in başkenti Alger’de dünyaya gelmiştir. İlk ve orta öğrenimini burada
+            tamamlamıştır. Asma, her ne kadar kendi tercihi olmasa da annesinin yönlendirmesiyle Alger Üniversitesinde
+            Muhasebe ve Finans alanında lisans eğitimini tamamlamıştır. Üniversite yıllarında Türk kültürü ve Anadolu
+            insanı üzerine araştırmalar yapmaya başlamış, bu süreçte Türkçeye olan ilgisi de giderek artmıştır.
+
+            Kitap okumayı, özellikle kütüphanelerde ve eski raflar arasında vakit geçirmeyi bir tutku hâline getiren
+            Asma; aynı zamanda seyahat etmeyi de çok sevmektedir. Günümüzde “Kaderin Kurbanı, Cinayet Bulmacası,
+            Hayatla Mücadelem, Ateşin Ortasında” adlı romanlarının yanı sıra “Türkiye’ye Ziyaretçi Kılavuzu” başlığı
+            altında toplam beş eseri bulunmaktadır. Yazarın en dikkat çekici yönlerinden biri, romanlarında yer verdiği
+            karakterleri gerçek hayattan esinlenerek oluşturmasıdır. Anlatımı sade ve anlaşılırdır; zaman zaman yerel
+            ağız ve şivelere de eserlerinde yer vermektedir.
+        </p>
+    </div>
+
+    <aside class="photo-wall right-wall">
+        <div class="hanging-photo photo5">
+            <span class="pin"></span>
+            <img src="esmabio5.png" alt="Asma Azreug fotoğraf 5">
+        </div>
+
+        <div class="hanging-photo photo6">
+            <span class="pin"></span>
+            <img src="esmabio6.png" alt="Asma Azreug fotoğraf 6">
+        </div>
+
+        <div class="hanging-photo photo7">
+            <span class="pin"></span>
+            <img src="esma9.png" alt="Asma Azreug fotoğraf 7">
+        </div>
+
+        <div class="hanging-photo photo8">
+            <span class="pin"></span>
+            <img src="esma10.png" alt="Asma Azreug fotoğraf 8">
+        </div>
+    </aside>
+
 </section>
 
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <title>İletişim - Asma Azreug</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-
-<!-- Üst şerit -->
-<div class="top-strip"></div>
-
-<!-- Sayfa içeriği -->
-<section>
-    <h2>İletişim</h2>
-    <p>İletişim bilgileri buraya gelecek.</p>
-</section>
-
-<!-- Alt menü ve şerit -->
 <div class="bottom-strip">
-    <nav class="menu-buttons">
-        <a href="iletisim.html" class="bar">İletişim</a>
-        <span class="divider">I</span>
-        <a href="tercumanlik.html" class="bar">Tercümanlık Desteği</a>
-        <span class="divider">I</span>
-        <a href="eserler.html" class="bar">Eserler</a>
-        <span class="divider">I</span>
-        <a href="fotolar.html" class="bar">Fotoğraflar</a>
-        <span class="divider">I</span>
-        <a href="roportajlar.html" class="bar">Röportajlar</a>
-        <span class="divider">I</span>
-        <a href="oduller.html" class="bar">Ödüller</a>
-        <span class="divider">I</span>
-        <a href="haberler.html" class="bar">Haberler</a>
-    </nav>
+
+    <div class="bottom-inner">
+
+        <nav class="menu-buttons">
+            <a href="iletisim.html" class="bar" id="footer-contact">İletişim</a>
+            <span class="divider">I</span>
+            <a href="tercumanlik.html" class="bar" id="footer-translation">Tercümanlık Desteği</a>
+            <span class="divider">I</span>
+            <a href="eserler.html" class="bar" id="footer-books">Eserler</a>
+            <span class="divider">I</span>
+            <a href="fotolar.html" class="bar" id="footer-photos">Fotoğraflar</a>
+            <span class="divider">I</span>
+            <a href="roportajlar.html" class="bar" id="footer-interviews">Röportajlar</a>
+            <span class="divider">I</span>
+            <a href="oduller.html" class="bar" id="footer-awards">Ödüller</a>
+            <span class="divider">I</span>
+            <a href="haberler.html" class="bar" id="footer-news">Haberler</a>
+        </nav>
+
+        <div class="powered-text">
+            powered by Emir Kulaz
+        </div>
+
+    </div>
+
 </div>
 
-</body>
-</html>
 
+<script>
+const translations = {
+    tr: {
+        heroText: "yazar tercüman gezgin",
+        menuHome: "anasayfa",
+        menuContact: "iletişim",
+        menuBio: "biografi",
+        menuBooks: "eserler",
+        menuNews: "haberler",
+        menuInterviews: "röportajlar",
+        menuAwards: "ödüller",
+        menuPhotos: "fotoğraflar",
+        bioTitle: "Biografi",
+        bioParagraph: `Asma Azreug; çoğunlukla sakin, fazla konuşmayan ve iç dünyasına dönük bir kişiliğe sahiptir.
+Onun kendini rahatça ifade edebilmesi, üzerindeki çekingen ve tutuk hâli geride bırakabilmesi için
+uygun ortamı yakalaması gerekir. Bu durum Asma’nın hayatında sıkça karşılaşılan bir özelliktir.
+
+Anadolu insanına büyük bir sevgi besleyen Cezayirli bir yazardır. “Kaderin Kurbanı”, daha çok
+duyguların akışıyla kaleme alınmış, aşk temasını işleyen bir romandır. Cezayir’de geniş bir okuyucu
+kitlesi tarafından beğeniyle karşılanan yazar, Türk Büyükelçiliği tarafından da fark edilmiş ve
+Sayın Büyükelçi tarafından bizzat tebrik edilerek kültür elçisi unvanına layık görülen ilk Cezayirli
+olmuştur. Anadolu hakkında ilk bakışta sınırlı bilgiye sahip gibi görünse de, onunla tanıştığınızda
+bu durumun ötesinde derin bir gözlem gücüne sahip olduğunu fark etmemek mümkün değildir. Bu eseriyle
+gelecekte Cezayir edebiyatında önemli bir yere sahip olacağını söylemek abartı sayılmaz.
+
+11 Eylül 1998 tarihinde Cezayir’in başkenti Alger’de dünyaya gelmiştir. İlk ve orta öğrenimini burada
+tamamlamıştır. Asma, her ne kadar kendi tercihi olmasa da annesinin yönlendirmesiyle Alger Üniversitesinde
+Muhasebe ve Finans alanında lisans eğitimini tamamlamıştır. Üniversite yıllarında Türk kültürü ve Anadolu
+insanı üzerine araştırmalar yapmaya başlamış, bu süreçte Türkçeye olan ilgisi de giderek artmıştır.
+
+Kitap okumayı, özellikle kütüphanelerde ve eski raflar arasında vakit geçirmeyi bir tutku hâline getiren
+Asma; aynı zamanda seyahat etmeyi de çok sevmektedir. Günümüzde “Kaderin Kurbanı, Cinayet Bulmacası,
+Hayatla Mücadelem, Ateşin Ortasında” adlı romanlarının yanı sıra “Türkiye’ye Ziyaretçi Kılavuzu” başlığı
+altında toplam beş eseri bulunmaktadır. Yazarın en dikkat çekici yönlerinden biri, romanlarında yer verdiği
+karakterleri gerçek hayattan esinlenerek oluşturmasıdır. Anlatımı sade ve anlaşılırdır; zaman zaman yerel
+ağız ve şivelere de eserlerinde yer vermektedir.`,
+        footerContact: "İletişim",
+        footerTranslation: "Tercümanlık Desteği",
+        footerBooks: "Eserler",
+        footerPhotos: "Fotoğraflar",
+        footerInterviews: "Röportajlar",
+        footerAwards: "Ödüller",
+        footerNews: "Haberler"
+    },
+    fr: {
+        heroText: "écrivaine traductrice voyageuse",
+        menuHome: "accueil",
+        menuContact: "contact",
+        menuBio: "biographie",
+        menuBooks: "œuvres",
+        menuNews: "actualités",
+        menuInterviews: "entretiens",
+        menuAwards: "prix",
+        menuPhotos: "photos",
+        bioTitle: "Biographie",
+        bioParagraph: `Asma Azreug a une personnalité plutôt calme, discrète et tournée vers son monde intérieur.
+Pour pouvoir s’exprimer librement et dépasser sa réserve, elle a besoin de trouver le bon environnement.
+C’est un trait souvent remarqué dans sa vie.
+
+Écrivaine algérienne, elle nourrit un grand amour pour l’Anatolie et son peuple. “La Victime du Destin”
+est un roman écrit sous le flot des émotions et centré sur le thème de l’amour. L’autrice, très appréciée
+par un large lectorat en Algérie, a aussi attiré l’attention de l’Ambassade de Turquie et est devenue la
+première Algérienne à recevoir le titre d’ambassadrice culturelle après avoir été félicitée personnellement
+par l’Ambassadeur. Même si elle semble au premier abord avoir une connaissance limitée de l’Anatolie,
+on remarque vite, en la connaissant, la profondeur de son regard et de son sens de l’observation. Il n’est
+pas exagéré de dire qu’elle pourrait occuper à l’avenir une place importante dans la littérature algérienne.
+
+Elle est née le 11 septembre 1998 à Alger, capitale de l’Algérie. Elle y a effectué ses études primaires
+et secondaires. Même si ce n’était pas son premier choix, Asma a terminé des études universitaires en
+Comptabilité et Finance à l’Université d’Alger, sous l’orientation de sa mère. Durant ses années
+universitaires, elle a commencé à faire des recherches sur la culture turque et sur le peuple anatolien,
+et son intérêt pour la langue turque n’a cessé de grandir.
+
+Asma considère la lecture comme une passion, notamment le temps passé dans les bibliothèques et entre
+les vieilles étagères. Elle aime également beaucoup voyager. Aujourd’hui, outre ses romans “La Victime du Destin,
+L’Énigme du Meurtre, Mon Combat avec la Vie, Au Milieu du Feu”, elle possède aussi cinq ouvrages réunis
+sous le titre “Guide du Visiteur en Turquie”. L’un des aspects les plus remarquables de son écriture est
+qu’elle s’inspire de la vie réelle pour construire ses personnages. Son style est simple et clair, et elle
+intègre parfois dans ses œuvres des parlers et accents locaux.`,
+        footerContact: "Contact",
+        footerTranslation: "Soutien en traduction",
+        footerBooks: "Œuvres",
+        footerPhotos: "Photos",
+        footerInterviews: "Entretiens",
+        footerAwards: "Prix",
+        footerNews: "Actualités"
+    },
+    ar: {
+        heroText: "كاتبة مترجمة رحّالة",
+        menuHome: "الرئيسية",
+        menuContact: "اتصال",
+        menuBio: "السيرة الذاتية",
+        menuBooks: "الأعمال",
+        menuNews: "الأخبار",
+        menuInterviews: "المقابلات",
+        menuAwards: "الجوائز",
+        menuPhotos: "الصور",
+        bioTitle: "السيرة الذاتية",
+        bioParagraph: `أسماء أزروغ شخصية هادئة في الغالب، قليلة الكلام وتميل إلى عالمها الداخلي.
+ولكي تتمكن من التعبير عن نفسها براحة وتتجاوز خجلها وتحفظها، فهي تحتاج إلى البيئة المناسبة.
+وهذه سمة تتكرر كثيرًا في حياتها.
+
+هي كاتبة جزائرية تحمل محبة كبيرة للإنسان الأناضولي. روايتها “ضحية القدر” كُتبت إلى حد كبير
+بدفق المشاعر وتعالج موضوع الحب. وقد لاقت الكاتبة استحسانًا واسعًا من القراء في الجزائر، كما
+لفتت انتباه السفارة التركية، وحصلت على تهنئة شخصية من سعادة السفير، لتصبح أول جزائرية تُمنح
+لقب سفيرة الثقافة. ورغم أنها قد تبدو للوهلة الأولى محدودة المعرفة بالأناضول، إلا أن من يعرفها
+يلاحظ سريعًا عمق ملاحظتها وقوة رؤيتها. وليس من المبالغة القول إن هذا العمل قد يمنحها مكانة
+مهمة في الأدب الجزائري مستقبلًا.
+
+وُلدت في 11 سبتمبر 1998 في الجزائر العاصمة. وأكملت تعليمها الابتدائي والمتوسط هناك.
+ورغم أن ذلك لم يكن خيارها الشخصي، فقد أنهت دراستها الجامعية في المحاسبة والتمويل بجامعة الجزائر
+بتوجيه من والدتها. وخلال سنوات الجامعة بدأت بإجراء أبحاث حول الثقافة التركية والإنسان الأناضولي،
+وازداد اهتمامها باللغة التركية تدريجيًا.
+
+القراءة بالنسبة لأسماء شغف كبير، وخاصة قضاء الوقت في المكتبات وبين الرفوف القديمة.
+كما أنها تحب السفر كثيرًا. واليوم، إلى جانب رواياتها “ضحية القدر، لغز الجريمة، صراعي مع الحياة،
+في وسط النار”، لديها أيضًا خمسة أعمال تحت عنوان “دليل الزائر إلى تركيا”. ومن أبرز ما يميز
+كتابتها أنها تستلهم شخصيات رواياتها من الحياة الواقعية. أسلوبها بسيط وواضح، وتستخدم أحيانًا
+اللهجات واللكنات المحلية في أعمالها.`,
+        footerContact: "اتصال",
+        footerTranslation: "دعم الترجمة",
+        footerBooks: "الأعمال",
+        footerPhotos: "الصور",
+        footerInterviews: "المقابلات",
+        footerAwards: "الجوائز",
+        footerNews: "الأخبار"
+    }
+};
+
+function changeLang(lang, el) {
+    document.querySelectorAll(".lang-tab").forEach(tab => {
+        tab.classList.remove("active");
+    });
+
+    if (el) el.classList.add("active");
+
+    localStorage.setItem("siteLang", lang);
+
+    document.getElementById("hero-text").innerText = translations[lang].heroText;
+
+    document.getElementById("menu-home").innerText = translations[lang].menuHome;
+    document.getElementById("menu-contact").innerText = translations[lang].menuContact;
+    document.getElementById("menu-bio").innerText = translations[lang].menuBio;
+    document.getElementById("menu-books").innerText = translations[lang].menuBooks;
+    document.getElementById("menu-news").innerText = translations[lang].menuNews;
+    document.getElementById("menu-interviews").innerText = translations[lang].menuInterviews;
+    document.getElementById("menu-awards").innerText = translations[lang].menuAwards;
+    document.getElementById("menu-photos").innerText = translations[lang].menuPhotos;
+
+    document.getElementById("bio-title").innerText = translations[lang].bioTitle;
+    document.getElementById("bio-paragraph").innerText = translations[lang].bioParagraph;
+
+    document.getElementById("footer-contact").innerText = translations[lang].footerContact;
+    document.getElementById("footer-translation").innerText = translations[lang].footerTranslation;
+    document.getElementById("footer-books").innerText = translations[lang].footerBooks;
+    document.getElementById("footer-photos").innerText = translations[lang].footerPhotos;
+    document.getElementById("footer-interviews").innerText = translations[lang].footerInterviews;
+    document.getElementById("footer-awards").innerText = translations[lang].footerAwards;
+    document.getElementById("footer-news").innerText = translations[lang].footerNews;
+
+    document.documentElement.lang = lang;
+}
+window.addEventListener("DOMContentLoaded", () => {
+    const savedLang = localStorage.getItem("siteLang") || "tr";
+
+    document.querySelectorAll(".lang-tab").forEach(tab => {
+        const onclickText = tab.getAttribute("onclick") || "";
+        if (onclickText.includes(`changeLang('${savedLang}'`)) {
+            changeLang(savedLang, tab);
+        }
+    });
+});
+</script>
+<script>
+window.addEventListener("DOMContentLoaded", () => {
+    const strip = document.querySelector(".bottom-strip");
+
+    if (strip && !document.querySelector(".powered-text")) {
+        const powered = document.createElement("div");
+        powered.className = "powered-text";
+        powered.innerText = "powered by Emir Kulaz";
+
+        const inner = strip.querySelector(".bottom-inner") || strip;
+        inner.appendChild(powered);
+    }
+});
+</script>
 </body>
 </html>
