@@ -2,51 +2,57 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&display=swap" rel="stylesheet">
     <title>Asma Azreug Site</title>
-
-    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
-    <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- ÜST MANŞET -->
 <header class="hero">
+
+<div class="lang-switch">
+    <a href="#" class="lang-tab" onclick="changeLang('ar', this); return false;">
+        <img src="cezayir-bayrak.png" alt="Arapça">
+    </a>
+
+    <a href="#" class="lang-tab" onclick="changeLang('tr', this); return false;">
+        <img src="turkiye-bayrak.png" alt="Türkçe">
+    </a>
+
+    <a href="#" class="lang-tab" onclick="changeLang('fr', this); return false;">
+        <img src="fransa-bayrak.png" alt="Fransızca">
+    </a>
+</div>
 
     <div class="hero-left">
         <h1>ASMA AZREUG</h1>
-        <p>yazar tercüman gezgin </p>
+        <p id="hero-text">yazar tercüman gezgin</p>
     </div>
 
     <div class="hero-center">
         <img src="esma4.png" alt="Asma Azreug">
-        
     </div>
 
     <div class="hero-right">
-      <a href="index.html" class="menu-btn anasayfa active">anasayfa</a>
-      <a href="iletisim.html" class="menu-btn iletisim">iletişim</a>
-      <a href="biography.html" class="menu-btn biyografi">biografi</a>
-      <a href="eserler.html" class="menu-btn eserler">eserler</a>
-      <a href="haberler.html" class="menu-btn haberler">haberler</a>
-      <a href="roportajlar.html" class="menu-btn roportajlar">röportajlar</a>
-      <a href="oduller.html" class="menu-btn oduller">ödüller</a>
-      <a href="fotolar.html" class="menu-btn fotolar">fotoğraflar</a>
+      <a href="index.html" class="menu-btn anasayfa active" id="menu-home">anasayfa</a>
+      <a href="iletisim.html" class="menu-btn iletisim" id="menu-contact">iletişim</a>
+      <a href="biography.html" class="menu-btn biyografi" id="menu-bio">biografi</a>
+      <a href="eserler.html" class="menu-btn eserler" id="menu-books">eserler</a>
+      <a href="haberler.html" class="menu-btn haberler" id="menu-news">haberler</a>
+      <a href="roportajlar.html" class="menu-btn roportajlar" id="menu-interviews">röportajlar</a>
+      <a href="oduller.html" class="menu-btn oduller" id="menu-awards">ödüller</a>
+      <a href="fotolar.html" class="menu-btn fotolar" id="menu-photos">fotoğraflar</a>
     </div>
     
-
 </header>
-<!-- ANA SAYFA İÇERİK -->
+
 <div class="home-simple">
 
-    <!-- SOL (Biography) -->
     <div class="home-left">
-        <h2>Biography</h2>
+        <h2 id="title">Biyografi</h2>
 
         <div class="bio-card">
             <div class="bio-card-frame">
@@ -54,80 +60,220 @@
             </div>
 
             <div class="bio-text">
-                <p>
-                    Asma Azreug, yazar, tercüman ve gezgin kimliğiyle farklı kültürleri,
-                    dilleri ve yaşam deneyimlerini yazılarına taşıyan çok yönlü bir isimdir.
-                </p>
+                <p id="bio-paragraph">
+Asma Azreug genellikle sakin, içine kapanık, iç dünyasına odaklanmış bir kişiliğe sahiptir. Kalabalıkların gerisinde kalmayı tercih eder ve düşüncelerini kolay kolay açığa vurmaz. Kendini tam olarak ifade etmek ve bu ince çekingenliğinden kurtulmak için doğru anı ve atmosferi bulması gerekir.
 
-                <p>
-                    Edebiyat, çeviri ve yolculuk ekseninde şekillenen çalışmaları; hafıza,
-                    kimlik ve kültürlerarası karşılaşmalar gibi temaları öne çıkarır.
-                </p>
+Bu sessizlik, bir eksiklik olmaktan çok, içsel derinliğin bir işaretidir. Dört eseri, iç dünyasının berraklığını, zenginliğini, hassasiyetini ve karmaşıklığını ortaya koymaktadır.                </p>
 
-                <a href="biography.html" class="home-link">devamı →</a>
+                <a href="biography.html" class="home-link" id="read-more">devamı →</a>
             </div>
         </div>
     </div>
 
-    <!-- SAĞ -->
     <div class="home-right">
 
-        <!-- BOOKS -->
         <div class="home-box">
-            <h2>Books</h2>
+            <h2 id="books-title">Kitaplar</h2>
 
             <div class="book-card">
                 <img src="kitap2.png" alt="Kitap">
 
                 <div>
-                    <h3>İz Cinayet</h3>
-                    <p>Kısa bir kitap tanıtımı burada yer alır.</p>
-                    <a href="eserler.html" class="home-link">devamı →</a>
+                    <h3 id="book-name">İz Cinayet</h3>
+                    <p id="book-desc">Tüm izler onu işaret etse de…</p>
+                    <a href="eserler.html" class="home-link" id="book-link">devamı →</a>
                 </div>
             </div>
         </div>
 
-        <!-- NEWS -->
         <div class="home-box">
-            <h2>News</h2>
+            <h2 id="news-title">Haberler</h2>
 
             <div class="news-card">
                 <span class="news-date">2025</span>
-                <p>Yeni röportaj yayında.</p>
+                <p id="news-text">TRT Türk programı...</p>
             </div>
 
-            <div class="news-card">
-                <span class="news-date">2025</span>
-                <p>Fotoğraf galerisi güncellendi.</p>
-            </div>
-
-            <div class="news-card">
-                <span class="news-date">2025</span>
-                <p>Yeni kitap duyurusu yakında.</p>
-            </div>
-
-            <a href="haberler.html" class="home-link">devamı →</a>
+            <a href="haberler.html" class="home-link" id="news-link">devamı →</a>
         </div>
 
     </div>
 
 </div>
-<!-- ALT MENÜ -->
+
+<script>
+const translations = {
+  tr: {
+    title: "Biyografi",
+    heroText: "yazar tercüman gezgin",
+    menuHome: "anasayfa",
+    menuContact: "iletişim",
+    menuBio: "biografi",
+    menuBooks: "eserler",
+    menuNews: "haberler",
+    menuInterviews: "röportajlar",
+    menuAwards: "ödüller",
+    menuPhotos: "fotoğraflar",
+    readMore: "devamı →",
+    booksTitle: "Kitaplar",
+    bookName: "İz Cinayet",
+    bookDesc: "Tüm izler onu işaret etse de…",
+    newsTitle: "Haberler",
+    newsText: "TRT Türk programı...",
+bioParagraph: `Asma Azreug genellikle sakin, içine kapanık, iç dünyasına odaklanmış bir kişiliğe sahiptir. Kalabalıkların gerisinde kalmayı tercih eder ve düşüncelerini kolay kolay açığa vurmaz. Kendini tam olarak ifade etmek ve bu ince çekingenliğinden kurtulmak için doğru anı ve atmosferi bulması gerekir.
+
+Bu sessizlik, bir eksiklik olmaktan çok, içsel derinliğin bir işaretidir. Dört eseri, iç dünyasının berraklığını, zenginliğini, hassasiyetini ve karmaşıklığını ortaya koymaktadır.`,    footerTranslation: "Tercümanlık Desteği",
+    footerBooks: "Eserler",
+    footerPhotos: "Fotoğraflar",
+    footerInterviews: "Röportajlar",
+    footerAwards: "Ödüller",
+    footerNews: "Haberler"
+  },
+  fr: {
+    title: "Biographie",
+    heroText: "écrivaine traductrice voyageuse",
+    menuHome: "accueil",
+    menuContact: "contact",
+    menuBio: "biographie",
+    menuBooks: "œuvres",
+    menuNews: "actualités",
+    menuInterviews: "entretiens",
+    menuAwards: "prix",
+    menuPhotos: "photos",
+    readMore: "suite →",
+    booksTitle: "Livres",
+    bookName: "İz Cinayet",
+    bookDesc: "Même si tous les indices pointent vers lui…",
+    newsTitle: "Actualités",
+    newsText: "Programme TRT Türk...",
+bioParagraph: `Asma Azreug possède une personnalité généralement calme, discrète et tournée vers son monde intérieur. Elle préfère rester en retrait dans les foules et ne dévoile pas ses pensées avec facilité. Pour pouvoir s’exprimer pleinement et laisser derrière elle cette réserve subtile, elle a besoin de trouver le moment et l’atmosphère justes. 
+
+Ce silence, loin d’être un manque, est le signe d’une profondeur intérieure. Ses quatre œuvres révèlent avec clarté la richesse, la sensibilité et la complexité de son univers intérieur.`,
+footerContact: "Contact",    footerContact: "Contact",
+    footerTranslation: "Soutien en traduction",
+    footerBooks: "Œuvres",
+    footerPhotos: "Photos",
+    footerInterviews: "Entretiens",
+    footerAwards: "Prix",
+    footerNews: "Actualités"
+  },
+  ar: {
+    title: "السيرة الذاتية",
+    heroText: "كاتبة مترجمة رحّالة",
+    menuHome: "الرئيسية",
+    menuContact: "اتصال",
+    menuBio: "السيرة الذاتية",
+    menuBooks: "الأعمال",
+    menuNews: "الأخبار",
+    menuInterviews: "المقابلات",
+    menuAwards: "الجوائز",
+    menuPhotos: "الصور",
+    readMore: "المزيد →",
+    booksTitle: "الكتب",
+    bookName: "İz Cinayet",
+    bookDesc: "رغم أن كل الآثار تشير إليه...",
+    newsTitle: "الأخبار",
+    newsText: "برنامج TRT Türk...",
+bioParagraph: `تتميّز أسماء أزروغ بشخصية هادئة في الغالب، متحفظة وتميل إلى عالمها الداخلي. فهي تفضّل البقاء في الخلف بين الجموع، ولا تُفصح عن أفكارها بسهولة. ولكي تتمكن من التعبير عن نفسها بشكل كامل وتتجاوز تلك المسحة الخفيفة من التحفّظ، فهي بحاجة إلى إيجاد اللحظة المناسبة والجو الملائم.`,    footerContact: "اتصال",
+    footerTranslation: "دعم الترجمة",
+    footerBooks: "الأعمال",
+    footerPhotos: "الصور",
+    footerInterviews: "المقابلات",
+    footerAwards: "الجوائز",
+    footerNews: "الأخبار"
+  }
+};
+
+function changeLang(lang, el) {
+  document.querySelectorAll(".lang-tab").forEach(tab => {
+    tab.classList.remove("active");
+  });
+
+  if (el) el.classList.add("active");
+
+  localStorage.setItem("siteLang", lang);
+
+  document.getElementById("title").innerText = translations[lang].title;
+  document.getElementById("hero-text").innerText = translations[lang].heroText;
+  document.getElementById("menu-home").innerText = translations[lang].menuHome;
+  document.getElementById("menu-contact").innerText = translations[lang].menuContact;
+  document.getElementById("menu-bio").innerText = translations[lang].menuBio;
+  document.getElementById("menu-books").innerText = translations[lang].menuBooks;
+  document.getElementById("menu-news").innerText = translations[lang].menuNews;
+  document.getElementById("menu-interviews").innerText = translations[lang].menuInterviews;
+  document.getElementById("menu-awards").innerText = translations[lang].menuAwards;
+  document.getElementById("menu-photos").innerText = translations[lang].menuPhotos;
+  document.getElementById("read-more").innerText = translations[lang].readMore;
+  document.getElementById("books-title").innerText = translations[lang].booksTitle;
+  document.getElementById("book-name").innerText = translations[lang].bookName;
+  document.getElementById("book-desc").innerText = translations[lang].bookDesc;
+  document.getElementById("book-link").innerText = translations[lang].readMore;
+  document.getElementById("news-title").innerText = translations[lang].newsTitle;
+  document.getElementById("news-text").innerText = translations[lang].newsText;
+  document.getElementById("news-link").innerText = translations[lang].readMore;
+  document.getElementById("bio-paragraph").innerText = translations[lang].bioParagraph;
+
+  document.getElementById("footer-contact").innerText = translations[lang].footerContact;
+  document.getElementById("footer-translation").innerText = translations[lang].footerTranslation;
+  document.getElementById("footer-books").innerText = translations[lang].footerBooks;
+  document.getElementById("footer-photos").innerText = translations[lang].footerPhotos;
+  document.getElementById("footer-interviews").innerText = translations[lang].footerInterviews;
+  document.getElementById("footer-awards").innerText = translations[lang].footerAwards;
+  document.getElementById("footer-news").innerText = translations[lang].footerNews;
+
+  document.documentElement.lang = lang;
+
+  if (lang === "ar") {
+    document.querySelector(".bio-text").style.direction = "rtl";
+    document.querySelector(".bio-text").style.textAlign = "right";
+    document.querySelector(".home-right").style.direction = "rtl";
+  } else {
+    document.querySelector(".bio-text").style.direction = "ltr";
+    document.querySelector(".bio-text").style.textAlign = "left";
+    document.querySelector(".home-right").style.direction = "ltr";
+  }
+}window.addEventListener("DOMContentLoaded", () => {
+  const savedLang = localStorage.getItem("siteLang") || "tr";
+
+  document.querySelectorAll(".lang-tab").forEach(tab => {
+    const onclickText = tab.getAttribute("onclick") || "";
+    if (onclickText.includes(`changeLang('${savedLang}'`)) {
+      changeLang(savedLang, tab);
+    }
+  });
+});
+
+</script>
+<script>
+window.addEventListener("DOMContentLoaded", () => {
+    const strip = document.querySelector(".bottom-strip");
+
+    if (strip && !document.querySelector(".powered-text")) {
+        const powered = document.createElement("div");
+        powered.className = "powered-text";
+        powered.innerText = "powered by Emir Kulaz";
+
+        const inner = strip.querySelector(".bottom-inner") || strip;
+        inner.appendChild(powered);
+    }
+});
+</script>
+
 <div class="bottom-strip">
     <nav class="menu-buttons">
-        <a href="iletisim.html" class="bar">İletişim</a>
+        <a href="iletisim.html" class="bar" id="footer-contact">İletişim</a>
         <span class="divider">I</span>
-        <a href="tercumanlik.html" class="bar">Tercümanlık Desteği</a>
+        <a href="tercumanlik.html" class="bar" id="footer-translation">Tercümanlık Desteği</a>
         <span class="divider">I</span>
-        <a href="eserler.html" class="bar">Eserler</a>
+        <a href="eserler.html" class="bar" id="footer-books">Eserler</a>
         <span class="divider">I</span>
-        <a href="fotolar.html" class="bar">Fotoğraflar</a>
+        <a href="fotolar.html" class="bar" id="footer-photos">Fotoğraflar</a>
         <span class="divider">I</span>
-        <a href="roportajlar.html" class="bar">Röportajlar</a>
+        <a href="roportajlar.html" class="bar" id="footer-interviews">Röportajlar</a>
         <span class="divider">I</span>
-        <a href="oduller.html" class="bar">Ödüller</a>
+        <a href="oduller.html" class="bar" id="footer-awards">Ödüller</a>
         <span class="divider">I</span>
-        <a href="haberler.html" class="bar">Haberler</a>
+        <a href="haberler.html" class="bar" id="footer-news">Haberler</a>
     </nav>
 </div>
 
