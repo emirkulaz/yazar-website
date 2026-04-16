@@ -3,58 +3,264 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
-    <title>Biography - Asma Azreug</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&display=swap" rel="stylesheet">
+    <title>Ödüller - Asma Azreug</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
 <header class="hero">
+
+    <!-- BAYRAKLAR -->
+<div class="lang-switch">
+    <a href="#" class="lang-tab" onclick="changeLang('ar', this); return false;">
+        <img src="cezayir-bayrak.png" alt="Arapça">
+    </a>
+
+    <a href="#" class="lang-tab" onclick="changeLang('tr', this); return false;">
+        <img src="turkiye-bayrak.png" alt="Türkçe">
+    </a>
+
+    <a href="#" class="lang-tab" onclick="changeLang('fr', this); return false;">
+        <img src="fransa-bayrak.png" alt="Fransızca">
+    </a>
+</div>
+
     <div class="hero-left">
         <h1>ASMA AZREUG</h1>
-        <p>yazar tercüman gezgin🌍</p>
+        <p id="hero-text">yazar tercüman gezgin</p>
     </div>
 
     <div class="hero-center">
         <img src="yazar-foto.png" alt="Asma Azreug">
     </div>
 
-<div class="hero-right">
-  <a href="index.html" class="menu-btn anasayfa">anasayfa</a>
-  <a href="iletisim.html" class="menu-btn iletisim">iletişim</a>
-  <a href="biography.html" class="menu-btn biyografi">biografi</a>
-  <a href="eserler.html" class="menu-btn eserler">eserler</a>
-  <a href="haberler.html" class="menu-btn haberler">haberler</a>
-  <a href="roportajlar.html" class="menu-btn roportajlar">röportajlar</a>
-  <a href="oduller.html" class="menu-btn oduller active">ödüller</a>
-  <a href="fotolar.html" class="menu-btn fotolar">fotoğraflar</a>
-</div>
+    <div class="hero-right">
+        <a href="index.html" class="menu-btn anasayfa" id="menu-home">anasayfa</a>
+        <a href="iletisim.html" class="menu-btn iletisim" id="menu-contact">iletişim</a>
+        <a href="biography.html" class="menu-btn biyografi" id="menu-bio">biografi</a>
+        <a href="eserler.html" class="menu-btn eserler" id="menu-books">eserler</a>
+        <a href="haberler.html" class="menu-btn haberler" id="menu-news">haberler</a>
+        <a href="roportajlar.html" class="menu-btn roportajlar" id="menu-interviews">röportajlar</a>
+        <a href="oduller.html" class="menu-btn oduller active" id="menu-awards">ödüller</a>
+        <a href="fotolar.html" class="menu-btn fotolar" id="menu-photos">fotoğraflar</a>
+    </div>
 </header>
 
 <div class="top-strip"></div>
 
-<section>
-    <h2>Ödüller</h2>
-    <p>Asma Azreug'un kazandığı ödüller buraya gelecek.</p>
+<section class="oduller-section">
+    <h2 id="page-title">Ödüller</h2>
+
+    <div class="oduller-listesi">
+
+        <div class="odul-karti">
+            <img src="odul1.png" alt="Ödül 1">
+            <div class="odul-bilgi">
+                <h3 id="award1-title">Constantine Üniverstiesi</h3>
+                <p id="award1-text">Cezayir’den katılan Asma Azreug da En İyi Eser Kategorisi’nde ödül kazandı.Filistin'e zulümden kurtarmak adına dillerin nasıl etkisi olabilir" başlık için konstantin üniversitesinde konferans akabinde teşekkür ve takdir ödülü takdim edildi.</p>
+            </div>
+        </div>
+
+       <div class="odul-karti">
+    <img src="odul2.png" alt="Ödül 2">
+
+    <div class="odul-bilgi">
+        <h3 id="award2-title">YTB</h3>
+        <p id="award2-text">YTB tarafından düzenlenen "YTB bir dünya edebiyatı" en iyi eser dalı için katılıp kazanmıştır.</p>
+    </div>
+    </div>
+       <div class="odul-karti odul-karti-3">
+    <div class="award3-gallery">
+        <img src="odul3.png" alt="Ödül 3">
+        <img src="odul3-ek.png" alt="Ödül 3 Ek Fotoğraf">
+    </div>
+
+    <div class="odul-bilgi">
+        <h3 id="award3-title">TİKA</h3>
+        <p id="award3-text">Cezayir'de Tika tarafından düzenlenen harezmi eğitiminde tercümanlık yaptığından başarı belgesi almıştır</p>
+    </div>
+</div>
+
+    </div>
 </section>
 
 <div class="bottom-strip">
     <nav class="menu-buttons">
-        <a href="iletisim.html" class="bar">İletişim</a>
+        <a href="iletisim.html" class="bar" id="footer-contact">İletişim</a>
         <span class="divider">I</span>
-        <a href="tercumanlik.html" class="bar">Tercümanlık Desteği</a>
+        <a href="tercumanlik.html" class="bar" id="footer-translation">Tercümanlık Desteği</a>
         <span class="divider">I</span>
-        <a href="eserler.html" class="bar">Eserler</a>
+        <a href="eserler.html" class="bar" id="footer-books">Eserler</a>
         <span class="divider">I</span>
-        <a href="fotolar.html" class="bar">Fotoğraflar</a>
+        <a href="fotolar.html" class="bar" id="footer-photos">Fotoğraflar</a>
         <span class="divider">I</span>
-        <a href="roportajlar.html" class="bar">Röportajlar</a>
+        <a href="roportajlar.html" class="bar" id="footer-interviews">Röportajlar</a>
         <span class="divider">I</span>
-        <a href="oduller.html" class="bar">Ödüller</a>
+        <a href="oduller.html" class="bar" id="footer-awards">Ödüller</a>
         <span class="divider">I</span>
-        <a href="haberler.html" class="bar">Haberler</a>
+        <a href="haberler.html" class="bar" id="footer-news">Haberler</a>
     </nav>
 </div>
 
+<script>
+const translations = {
+    tr: {
+        heroText: "yazar tercüman gezgin",
+        menuHome: "anasayfa",
+        menuContact: "iletişim",
+        menuBio: "biografi",
+        menuBooks: "eserler",
+        menuNews: "haberler",
+        menuInterviews: "röportajlar",
+        menuAwards: "ödüller",
+        menuPhotos: "fotoğraflar",
+        pageTitle: "Ödüller",
+
+        award1Text: "Cezayir’den katılan Asma Azreug da En İyi Eser Kategorisi’nde ödül kazandı. Filistin'e zulümden kurtarmak adına dillerin nasıl etkisi olabilir başlıklı konferans sonrası teşekkür ve takdir ödülü aldı.",
+
+        award2Text: "YTB tarafından düzenlenen 'YTB Bir Dünya Edebiyatı' yarışmasında en iyi eser dalında ödül kazanmıştır.",
+
+        award3Text: "Cezayir'de TİKA tarafından düzenlenen Harezmi eğitiminde tercümanlık yaptığı için başarı belgesi almıştır.",
+
+        footerContact: "İletişim",
+        footerTranslation: "Tercümanlık Desteği",
+        footerBooks: "Eserler",
+        footerPhotos: "Fotoğraflar",
+        footerInterviews: "Röportajlar",
+        footerAwards: "Ödüller",
+        footerNews: "Haberler"
+    },
+
+    fr: {
+        heroText: "écrivaine traductrice voyageuse",
+        menuHome: "accueil",
+        menuContact: "contact",
+        menuBio: "biographie",
+        menuBooks: "œuvres",
+        menuNews: "actualités",
+        menuInterviews: "entretiens",
+        menuAwards: "prix",
+        menuPhotos: "photos",
+        pageTitle: "Prix",
+
+        award1Text: "Asma Azreug, venue d’Algérie, a remporté un prix dans la catégorie Meilleure Œuvre après une conférence à l’université de Constantine.",
+
+        award2Text: "Elle a remporté le prix du meilleur ouvrage dans le cadre du programme 'Une littérature mondiale' organisé par YTB.",
+
+        award3Text: "Elle a reçu un certificat de réussite pour son travail de traduction lors de la formation Harezmi organisée par TİKA en Algérie.",
+
+        footerContact: "Contact",
+        footerTranslation: "Soutien en traduction",
+        footerBooks: "Œuvres",
+        footerPhotos: "Photos",
+        footerInterviews: "Entretiens",
+        footerAwards: "Prix",
+        footerNews: "Actualités"
+    },
+
+    ar: {
+        heroText: "كاتبة مترجمة رحّالة",
+        menuHome: "الرئيسية",
+        menuContact: "اتصال",
+        menuBio: "السيرة الذاتية",
+        menuBooks: "الأعمال",
+        menuNews: "الأخبار",
+        menuInterviews: "المقابلات",
+        menuAwards: "الجوائز",
+        menuPhotos: "الصور",
+        pageTitle: "الجوائز",
+
+        award1Text: "فازت أسماء أزروغ بجائزة في فئة أفضل عمل بعد مشاركتها في مؤتمر بجامعة قسنطينة.",
+
+        award2Text: "فازت بجائزة أفضل عمل ضمن برنامج 'أدب عالمي واحد' الذي نظمته YTB.",
+
+        award3Text: "حصلت على شهادة تقدير لعملها كمترجمة في تدريب خوارزمي الذي نظمته تيكا في الجزائر.",
+
+        footerContact: "اتصال",
+        footerTranslation: "دعم الترجمة",
+        footerBooks: "الأعمال",
+        footerPhotos: "الصور",
+        footerInterviews: "المقابلات",
+        footerAwards: "الجوائز",
+        footerNews: "الأخبار"
+    }
+};
+
+function changeLang(lang, el) {
+    document.querySelectorAll(".lang-tab").forEach(tab => {
+        tab.classList.remove("active");
+    });
+
+    if (el) el.classList.add("active");
+
+    localStorage.setItem("siteLang", lang);
+
+    document.getElementById("hero-text").innerText = translations[lang].heroText;
+
+    document.getElementById("menu-home").innerText = translations[lang].menuHome;
+    document.getElementById("menu-contact").innerText = translations[lang].menuContact;
+    document.getElementById("menu-bio").innerText = translations[lang].menuBio;
+    document.getElementById("menu-books").innerText = translations[lang].menuBooks;
+    document.getElementById("menu-news").innerText = translations[lang].menuNews;
+    document.getElementById("menu-interviews").innerText = translations[lang].menuInterviews;
+    document.getElementById("menu-awards").innerText = translations[lang].menuAwards;
+    document.getElementById("menu-photos").innerText = translations[lang].menuPhotos;
+
+    document.getElementById("page-title").innerText = translations[lang].pageTitle;
+
+    document.getElementById("award1-text").innerText = translations[lang].award1Text;
+    document.getElementById("award2-text").innerText = translations[lang].award2Text;
+    document.getElementById("award3-text").innerText = translations[lang].award3Text;
+
+    document.getElementById("footer-contact").innerText = translations[lang].footerContact;
+    document.getElementById("footer-translation").innerText = translations[lang].footerTranslation;
+    document.getElementById("footer-books").innerText = translations[lang].footerBooks;
+    document.getElementById("footer-photos").innerText = translations[lang].footerPhotos;
+    document.getElementById("footer-interviews").innerText = translations[lang].footerInterviews;
+    document.getElementById("footer-awards").innerText = translations[lang].footerAwards;
+    document.getElementById("footer-news").innerText = translations[lang].footerNews;
+
+    document.documentElement.lang = lang;
+
+    if (lang === "ar") {
+        document.querySelectorAll(".odul-bilgi, .oduller-section h2").forEach(item => {
+            item.style.direction = "rtl";
+            item.style.textAlign = "right";
+        });
+    } else {
+        document.querySelectorAll(".odul-bilgi, .oduller-section h2").forEach(item => {
+            item.style.direction = "ltr";
+            item.style.textAlign = "left";
+        });
+        document.getElementById("page-title").style.textAlign = "center";
+    }
+}window.addEventListener("DOMContentLoaded", () => {
+    const savedLang = localStorage.getItem("siteLang") || "tr";
+
+    document.querySelectorAll(".lang-tab").forEach(tab => {
+        const onclickText = tab.getAttribute("onclick") || "";
+        if (onclickText.includes(`changeLang('${savedLang}'`)) {
+            changeLang(savedLang, tab);
+        }
+    });
+});
+</script>
+<script>
+window.addEventListener("DOMContentLoaded", () => {
+    const strip = document.querySelector(".bottom-strip");
+
+    if (strip && !document.querySelector(".powered-text")) {
+        const powered = document.createElement("div");
+        powered.className = "powered-text";
+        powered.innerText = "powered by Emir Kulaz";
+
+        const inner = strip.querySelector(".bottom-inner") || strip;
+        inner.appendChild(powered);
+    }
+});
+</script>
 </body>
 </html>
