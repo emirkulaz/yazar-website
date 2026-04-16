@@ -4,16 +4,32 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&display=swap" rel="stylesheet">
-    <title>Biography - Asma Azreug</title>
+    <title>Tercümanlık - Asma Azreug</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
 <header class="hero">
+
+    <div class="lang-switch">
+        <a href="#" class="lang-tab" onclick="changeLang('ar', this); return false;">
+            <img src="cezayir-bayrak.png" alt="Arapça">
+        </a>
+
+        <a href="#" class="lang-tab" onclick="changeLang('tr', this); return false;">
+            <img src="turkiye-bayrak.png" alt="Türkçe">
+        </a>
+
+        <a href="#" class="lang-tab" onclick="changeLang('fr', this); return false;">
+            <img src="fransa-bayrak.png" alt="Fransızca">
+        </a>
+    </div>
+
     <div class="hero-left">
         <h1>ASMA AZREUG</h1>
-        <p>yazar tercüman gezgin🌍</p>
+        <p id="hero-text">yazar tercüman gezgin🌍</p>
     </div>
 
     <div class="hero-center">
@@ -21,60 +37,203 @@
     </div>
 
     <div class="hero-right">
-      <a href="index.html" class="menu-btn anasayfa">anasayfa</a>
-      <a href="iletisim.html" class="menu-btn iletisim">iletişim</a>
-      <a href="biography.html" class="menu-btn biyografi">biografi</a>
-      <a href="eserler.html" class="menu-btn eserler">eserler</a>
-      <a href="haberler.html" class="menu-btn haberler">haberler</a>
-      <a href="roportajlar.html" class="menu-btn roportajlar">röportajlar</a>
-      <a href="oduller.html" class="menu-btn oduller">ödüller</a>
-      <a href="fotolar.html" class="menu-btn fotolar">fotoğraflar</a>
+        <a href="index.html" class="menu-btn" id="menu-home">anasayfa</a>
+        <a href="iletisim.html" class="menu-btn" id="menu-contact">iletişim</a>
+        <a href="biography.html" class="menu-btn" id="menu-bio">biografi</a>
+        <a href="eserler.html" class="menu-btn" id="menu-books">eserler</a>
+        <a href="haberler.html" class="menu-btn" id="menu-news">haberler</a>
+        <a href="roportajlar.html" class="menu-btn" id="menu-interviews">röportajlar</a>
+        <a href="oduller.html" class="menu-btn" id="menu-awards">ödüller</a>
+        <a href="fotolar.html" class="menu-btn" id="menu-photos">fotoğraflar</a>
     </div>
 </header>
+
 <div class="top-strip"></div>
 
-<section>
-    <h2>Yeminli Tercüman</h2>
-    <p>Yazarın fotoğrafları buraya gelecek.</p>
+<section class="translator-section">
+    <h2 id="translator-title">Yeminli Tercüman</h2>
+
+    <div class="translator-box">
+        <div class="translator-image">
+            <img src="tercuman-foto.png" alt="Asma Azreug Tercümanlık">
+            <img src="asma_signature.png" class="signature">
+        </div>
+
+        <div class="translator-text">
+            <p id="translator-text">
+                Asma Azreug yeminli bir tercümandır. Arapça, Fransızca ve Türkçeyi yalnızca akademik düzeyde değil, günlük yaşamın doğal akışı içinde de son derece akıcı ve etkili biçimde kullanmaktadır. Farklı kültürler arasında kurduğu güçlü bağ sayesinde, bir dilden diğerine yalnızca kelimeleri değil; anlamı, duyguyu, niyeti ve bağlamı da başarıyla aktarmaktadır.
+
+                Tercümanlık çalışmalarında resmî görüşmelerden kültürel etkinliklere, edebî metinlerden birebir iletişim süreçlerine kadar geniş bir alanda güven veren bir yaklaşım sergilemektedir. Özellikle Arapça, Fransızca ve Türkçe arasında yaptığı çevirilerde dilin inceliklerine hâkimiyeti, anlatım gücü ve doğru ifade becerisiyle öne çıkmaktadır.
+
+                Disiplinli çalışma anlayışı, dikkatli yaklaşımı ve iletişim yeteneği sayesinde, bulunduğu her ortamda diller arasında sağlam bir köprü kurabilen Asma Azreug, tercümanlığı yalnızca teknik bir iş olarak değil, aynı zamanda kültürler arası anlayışı güçlendiren önemli bir sorumluluk olarak görmektedir.
+            </p>
+        </div>
+    </div>
 </section>
 
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <title>İletişim - Asma Azreug</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-
-<!-- Sayfa içeriği -->
-<section>
-    <h2>İletişim</h2>
-    <p>İletişim bilgileri buraya gelecek.</p>
-</section>
-
-<!-- Alt menü ve şerit -->
 <div class="bottom-strip">
     <nav class="menu-buttons">
-        <a href="iletisim.html" class="bar">İletişim</a>
+        <a href="iletisim.html" class="bar" id="footer-contact">İletişim</a>
         <span class="divider">I</span>
-        <a href="tercumanlik.html" class="bar">Tercümanlık Desteği</a>
+        <a href="tercumanlik.html" class="bar" id="footer-translation">Tercümanlık Desteği</a>
         <span class="divider">I</span>
-        <a href="eserler.html" class="bar">Eserler</a>
+        <a href="eserler.html" class="bar" id="footer-books">Eserler</a>
         <span class="divider">I</span>
-        <a href="fotolar.html" class="bar">Fotoğraflar</a>
+        <a href="fotolar.html" class="bar" id="footer-photos">Fotoğraflar</a>
         <span class="divider">I</span>
-        <a href="roportajlar.html" class="bar">Röportajlar</a>
+        <a href="roportajlar.html" class="bar" id="footer-interviews">Röportajlar</a>
         <span class="divider">I</span>
-        <a href="oduller.html" class="bar">Ödüller</a>
+        <a href="oduller.html" class="bar" id="footer-awards">Ödüller</a>
         <span class="divider">I</span>
-        <a href="haberler.html" class="bar">Haberler</a>
+        <a href="haberler.html" class="bar" id="footer-news">Haberler</a>
     </nav>
 </div>
 
-</body>
-</html>
+<script>
+const translations = {
+    tr: {
+        footerContact: "İletişim",
+        heroText: "yazar tercüman gezgin🌍",
+        translatorTitle: "Yeminli Tercüman",
+        translatorText: `Asma Azreug yeminli bir tercümandır. Arapça, Fransızca ve Türkçeyi yalnızca akademik düzeyde değil, günlük yaşamın doğal akışı içinde de son derece akıcı ve etkili biçimde kullanmaktadır. Farklı kültürler arasında kurduğu güçlü bağ sayesinde, bir dilden diğerine yalnızca kelimeleri değil; anlamı, duyguyu, niyeti ve bağlamı da başarıyla aktarmaktadır.
 
+Tercümanlık çalışmalarında resmî görüşmelerden kültürel etkinliklere, edebî metinlerden birebir iletişim süreçlerine kadar geniş bir alanda güven veren bir yaklaşım sergilemektedir. Özellikle Arapça, Fransızca ve Türkçe arasında yaptığı çevirilerde dilin inceliklerine hâkimiyeti, anlatım gücü ve doğru ifade becerisiyle öne çıkmaktadır.
+
+Disiplinli çalışma anlayışı, dikkatli yaklaşımı ve iletişim yeteneği sayesinde, bulunduğu her ortamda diller arasında sağlam bir köprü kurabilen Asma Azreug, tercümanlığı yalnızca teknik bir iş olarak değil, aynı zamanda kültürler arası anlayışı güçlendiren önemli bir sorumluluk olarak görmektedir.`,
+        menuHome: "anasayfa",
+        menuContact: "iletişim",
+        menuBio: "biografi",
+        menuBooks: "eserler",
+        menuNews: "haberler",
+        menuInterviews: "röportajlar",
+        menuAwards: "ödüller",
+        menuPhotos: "fotoğraflar",
+        footerContact: "İletişim",
+        footerTranslation: "Tercümanlık Desteği",
+        footerBooks: "Eserler",
+        footerPhotos: "Fotoğraflar",
+        footerInterviews: "Röportajlar",
+        footerAwards: "Ödüller",
+        footerNews: "Haberler"
+    },
+
+    fr: {
+        footerContact: "اتصال",
+        heroText: "écrivaine traductrice voyageuse🌍",
+        translatorTitle: "Traductrice assermentée",
+        translatorText: `Asma Azreug est une traductrice assermentée. Elle parle l’arabe, le français et le turc non seulement à un niveau académique, mais aussi avec une aisance naturelle dans la vie quotidienne. Grâce au lien fort qu’elle établit entre différentes cultures, elle réussit à transmettre non seulement les mots d’une langue à une autre, mais aussi le sens, l’émotion, l’intention et le contexte.
+
+Dans son travail de traduction, elle inspire confiance dans de nombreux domaines, allant des entretiens officiels aux événements culturels, des textes littéraires aux échanges directs entre personnes. Elle se distingue particulièrement dans ses traductions entre l’arabe, le français et le turc, grâce à sa maîtrise des subtilités de la langue, à sa force d’expression et à sa précision.
+
+Avec son sens de la discipline, son attention aux détails et ses solides compétences en communication, Asma Azreug construit un pont fiable entre les langues dans chaque environnement. Pour elle, la traduction n’est pas seulement un travail technique, mais aussi une responsabilité essentielle qui renforce la compréhension entre les cultures.`,
+        menuHome: "accueil",
+        menuContact: "contact",
+        menuBio: "biographie",
+        menuBooks: "œuvres",
+        menuNews: "actualités",
+        menuInterviews: "entretiens",
+        menuAwards: "prix",
+        menuPhotos: "photos",
+        footerContact: "Contact",
+        footerTranslation: "Soutien en traduction",
+        footerBooks: "Œuvres",
+        footerPhotos: "Photos",
+        footerInterviews: "Entretiens",
+        footerAwards: "Prix",
+        footerNews: "Actualités"
+    },
+
+    ar: {
+        heroText: "كاتبة مترجمة رحّالة🌍",
+        translatorTitle: "مترجمة محلفة",
+        translatorText: `أسماء أزروغ مترجمة محلفة. وهي تتحدث العربية والفرنسية والتركية بطلاقة كبيرة، ليس فقط على المستوى الأكاديمي، بل أيضًا كما لو كانت لغات تعيشها في حياتها اليومية بكل طبيعية. وبفضل قدرتها على بناء جسر قوي بين الثقافات المختلفة، فإنها لا تنقل الكلمات فقط من لغة إلى أخرى، بل تنقل أيضًا المعنى والمشاعر والنية والسياق بدقة ووعي.
+
+في أعمالها في الترجمة، تقدم أسلوبًا موثوقًا في مجالات متعددة، من اللقاءات الرسمية إلى الفعاليات الثقافية، ومن النصوص الأدبية إلى التواصل المباشر بين الأفراد. وتبرز بشكل خاص في الترجمة بين العربية والفرنسية والتركية، بفضل إتقانها لدقائق اللغة وقوة تعبيرها ودقتها في اختيار المعنى المناسب.
+
+ومن خلال انضباطها في العمل، واهتمامها بالتفاصيل، وقدرتها العالية على التواصل، تستطيع أسماء أزروغ أن تبني جسرًا متينًا بين اللغات في كل بيئة توجد فيها. وهي ترى أن الترجمة ليست مجرد عمل تقني، بل مسؤولية إنسانية وثقافية تسهم في تعزيز الفهم بين الشعوب والثقافات.`,
+        menuHome: "الرئيسية",
+        menuContact: "اتصال",
+        menuBio: "السيرة الذاتية",
+        menuBooks: "الأعمال",
+        menuNews: "الأخبار",
+        menuInterviews: "المقابلات",
+        menuAwards: "الجوائز",
+        menuPhotos: "الصور",
+        footerContact: "اتصال",
+        footerTranslation: "دعم الترجمة",
+        footerBooks: "الأعمال",
+        footerPhotos: "الصور",
+        footerInterviews: "المقابلات",
+        footerAwards: "الجوائز",
+        footerNews: "الأخبار"
+    }
+};
+
+function changeLang(lang, el) {
+    document.querySelectorAll(".lang-tab").forEach(tab => {
+        tab.classList.remove("active");
+    });
+
+    if (el) el.classList.add("active");
+
+    localStorage.setItem("siteLang", lang);
+
+    document.getElementById("hero-text").innerText = translations[lang].heroText;
+    document.getElementById("translator-title").innerText = translations[lang].translatorTitle;
+    document.getElementById("translator-text").innerText = translations[lang].translatorText;
+
+    document.getElementById("menu-home").innerText = translations[lang].menuHome;
+    document.getElementById("menu-contact").innerText = translations[lang].menuContact;
+    document.getElementById("menu-bio").innerText = translations[lang].menuBio;
+    document.getElementById("menu-books").innerText = translations[lang].menuBooks;
+    document.getElementById("menu-news").innerText = translations[lang].menuNews;
+    document.getElementById("menu-interviews").innerText = translations[lang].menuInterviews;
+    document.getElementById("menu-awards").innerText = translations[lang].menuAwards;
+    document.getElementById("menu-photos").innerText = translations[lang].menuPhotos;
+
+    document.getElementById("footer-contact").innerText = translations[lang].footerContact;
+    document.getElementById("footer-translation").innerText = translations[lang].footerTranslation;
+    document.getElementById("footer-books").innerText = translations[lang].footerBooks;
+    document.getElementById("footer-photos").innerText = translations[lang].footerPhotos;
+    document.getElementById("footer-interviews").innerText = translations[lang].footerInterviews;
+    document.getElementById("footer-awards").innerText = translations[lang].footerAwards;
+    document.getElementById("footer-news").innerText = translations[lang].footerNews;
+
+    document.documentElement.lang = lang;
+
+    if (lang === "ar") {
+        document.querySelector(".translator-text").style.direction = "rtl";
+        document.querySelector(".translator-text").style.textAlign = "right";
+    } else {
+        document.querySelector(".translator-text").style.direction = "ltr";
+        document.querySelector(".translator-text").style.textAlign = "left";
+    }
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+    const savedLang = localStorage.getItem("siteLang") || "tr";
+
+    document.querySelectorAll(".lang-tab").forEach(tab => {
+        const onclickText = tab.getAttribute("onclick") || "";
+        if (onclickText.includes(`changeLang('${savedLang}'`)) {
+            changeLang(savedLang, tab);
+        }
+    });
+});
+</script>
+<script>
+window.addEventListener("DOMContentLoaded", () => {
+    const strip = document.querySelector(".bottom-strip");
+
+    if (strip && !document.querySelector(".powered-text")) {
+        const powered = document.createElement("div");
+        powered.className = "powered-text";
+        powered.innerText = "powered by Emir Kulaz";
+
+        const inner = strip.querySelector(".bottom-inner") || strip;
+        inner.appendChild(powered);
+    }
+});
+</script>
 </body>
 </html>
