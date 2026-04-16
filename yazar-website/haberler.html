@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Haberler - Asma Azreug</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
@@ -12,9 +13,24 @@
 <body>
 
 <header class="hero">
+
+<div class="lang-switch">
+    <a href="#" class="lang-tab" onclick="changeLang('ar', this); return false;">
+        <img src="cezayir-bayrak.png" alt="Arapça">
+    </a>
+
+    <a href="#" class="lang-tab" onclick="changeLang('tr', this); return false;">
+        <img src="turkiye-bayrak.png" alt="Türkçe">
+    </a>
+
+    <a href="#" class="lang-tab" onclick="changeLang('fr', this); return false;">
+        <img src="fransa-bayrak.png" alt="Fransızca">
+    </a>
+</div>
+
     <div class="hero-left">
         <h1>ASMA AZREUG</h1>
-        <p>yazar tercüman gezgin 🌍</p>
+        <p id="hero-text">yazar tercüman gezgin</p>
     </div>
 
     <div class="hero-center">
@@ -22,41 +38,236 @@
     </div>
 
     <div class="hero-right">
-        <a href="index.html" class="menu-btn anasayfa">anasayfa</a>
-        <a href="iletisim.html" class="menu-btn iletisim">iletişim</a>
-        <a href="biography.html" class="menu-btn biyografi">biografi</a>
-        <a href="eserler.html" class="menu-btn eserler">eserler</a>
-        <a href="haberler.html" class="menu-btn haberler active">haberler</a>
-        <a href="roportajlar.html" class="menu-btn roportajlar">röportajlar</a>
-        <a href="oduller.html" class="menu-btn oduller">ödüller</a>
-        <a href="fotolar.html" class="menu-btn fotolar">fotoğraflar</a>
+        <a href="index.html" class="menu-btn anasayfa" id="menu-home">anasayfa</a>
+        <a href="iletisim.html" class="menu-btn iletisim" id="menu-contact">iletişim</a>
+        <a href="biography.html" class="menu-btn biyografi" id="menu-bio">biografi</a>
+        <a href="eserler.html" class="menu-btn eserler" id="menu-books">eserler</a>
+        <a href="haberler.html" class="menu-btn haberler active" id="menu-news">haberler</a>
+        <a href="roportajlar.html" class="menu-btn roportajlar" id="menu-interviews">röportajlar</a>
+        <a href="oduller.html" class="menu-btn oduller" id="menu-awards">ödüller</a>
+        <a href="fotolar.html" class="menu-btn fotolar" id="menu-photos">fotoğraflar</a>
     </div>
 </header>
 
-<div class="top-strip"></div>
+<section class="haber-detay">
+    <div class="haber-icerik">
+        <img src="esmahaber1.png" alt="Haber Fotoğrafı" class="haber-foto">
 
-<section>
-    <h2>Haberler</h2>
-    <p>Asma Azreug ile ilgili haberler burada yer alacak.</p>
+        <p id="news1-p1">
+            Bugün Sayın Büyükelçimiz Mücahit KÜÇÜKYILMAZ Bey tarafından kabul edildim.
+            Türkçe yazdığım kitaplarımı sunmuş, kendisiyle sohbet etme şansım olmuştur.
+            Ayrıca kendisinin imzalı eserlerini de armağan ettiği için teşekkürlerimi sunmak isterim.
+        </p>
+
+        <p id="news1-p2">
+            Bu buluşma benim için hem edebi hem de kültürel açıdan çok kıymetliydi.
+            Yazın hayatımda önemli bir yer tutan bu anıyı paylaşmaktan mutluluk duyuyorum.
+        </p>
+    </div>
+</section>
+
+<section class="haber-detay">
+    <div class="haber-icerik">
+        <img src="esmahaber3.png" alt="Arap basınında röportaj" class="haber-foto">
+
+        <p id="news2-p1">
+            Asma Azreug, 29 Eylül 2024 tarihinde Arap basınında yayımlanan kapsamlı bir röportajla
+            okurlarla yeniden buluştu. Röportajda yazarlık yolculuğunu, Türkçe kaleme aldığı eserleri
+            ve yazının hayatındaki yerini anlattı.
+        </p>
+
+        <p id="news2-p2">
+            Söyleşide yazmanın kendisi için yalnızca bir ifade biçimi değil, aynı zamanda fikirlerini
+            daha derin ve daha yaratıcı şekilde keşfetmesini sağlayan güçlü bir araç olduğunu vurguladı.
+            Bu röportaj, yazarın uluslararası edebiyat çevrelerinde artan görünürlüğünü de ortaya koydu.
+        </p>
+    </div>
+</section>
+
+<section class="haber-detay">
+    <div class="haber-icerik">
+        <img src="esma10.png" alt="Okur buluşması" class="haber-foto">
+
+        <p id="news3-p1">
+            Düzenlenen özel bir etkinlikte okuyucularıyla bir araya gelen Asma Azreug, imza gününde
+            edebiyat ve yazarlık üzerine samimi sohbetler gerçekleştirdi. Yoğun ilgi gören buluşmada
+            yazar, okurlarıyla birebir iletişim kurma fırsatı buldu.
+        </p>
+
+        <p id="news3-p2">
+            Etkinlik sonunda katılımcılara teşekkür eden Azreug, bu tür buluşmaların yazarlık yolculuğuna
+            ayrı bir anlam kattığını ifade etti. Okuyucularıyla kurduğu bağın, yeni eserleri için de ilham
+            kaynağı olduğunu belirtti.
+        </p>
+    </div>
 </section>
 
 <div class="bottom-strip">
     <nav class="menu-buttons">
-        <a href="iletisim.html" class="bar">İletişim</a>
+        <a href="iletisim.html" class="bar" id="footer-contact">İletişim</a>
         <span class="divider">I</span>
-        <a href="tercumanlik.html" class="bar">Tercümanlık Desteği</a>
+        <a href="tercumanlik.html" class="bar" id="footer-translation">Tercümanlık Desteği</a>
         <span class="divider">I</span>
-        <a href="eserler.html" class="bar">Eserler</a>
+        <a href="eserler.html" class="bar" id="footer-books">Eserler</a>
         <span class="divider">I</span>
-        <a href="fotolar.html" class="bar">Fotoğraflar</a>
+        <a href="fotolar.html" class="bar" id="footer-photos">Fotoğraflar</a>
         <span class="divider">I</span>
-        <a href="roportajlar.html" class="bar">Röportajlar</a>
+        <a href="roportajlar.html" class="bar" id="footer-interviews">Röportajlar</a>
         <span class="divider">I</span>
-        <a href="oduller.html" class="bar">Ödüller</a>
+        <a href="oduller.html" class="bar" id="footer-awards">Ödüller</a>
         <span class="divider">I</span>
-        <a href="haberler.html" class="bar">Haberler</a>
+        <a href="haberler.html" class="bar" id="footer-news">Haberler</a>
     </nav>
 </div>
 
+<script>
+const translations = {
+  tr: {
+    heroText: "yazar tercüman gezgin",
+    menuHome: "anasayfa",
+    menuContact: "iletişim",
+    menuBio: "biografi",
+    menuBooks: "eserler",
+    menuNews: "haberler",
+    menuInterviews: "röportajlar",
+    menuAwards: "ödüller",
+    menuPhotos: "fotoğraflar",
+    footerContact: "İletişim",
+    footerTranslation: "Tercümanlık Desteği",
+    footerBooks: "Eserler",
+    footerPhotos: "Fotoğraflar",
+    footerInterviews: "Röportajlar",
+    footerAwards: "Ödüller",
+    footerNews: "Haberler",
+    news1p1: "Bugün Sayın Büyükelçimiz Mücahit KÜÇÜKYILMAZ Bey tarafından kabul edildim. Türkçe yazdığım kitaplarımı sunmuş, kendisiyle sohbet etme şansım olmuştur. Ayrıca kendisinin imzalı eserlerini de armağan ettiği için teşekkürlerimi sunmak isterim.",
+    news1p2: "Bu buluşma benim için hem edebi hem de kültürel açıdan çok kıymetliydi. Yazın hayatımda önemli bir yer tutan bu anıyı paylaşmaktan mutluluk duyuyorum.",
+    news2p1: "Asma Azreug, 29 Eylül 2024 tarihinde Arap basınında yayımlanan kapsamlı bir röportajla okurlarla yeniden buluştu. Röportajda yazarlık yolculuğunu, Türkçe kaleme aldığı eserleri ve yazının hayatındaki yerini anlattı.",
+    news2p2: "Söyleşide yazmanın kendisi için yalnızca bir ifade biçimi değil, aynı zamanda fikirlerini daha derin ve daha yaratıcı şekilde keşfetmesini sağlayan güçlü bir araç olduğunu vurguladı. Bu röportaj, yazarın uluslararası edebiyat çevrelerinde artan görünürlüğünü de ortaya koydu.",
+    news3p1: "Düzenlenen özel bir etkinlikte okuyucularıyla bir araya gelen Asma Azreug, imza gününde edebiyat ve yazarlık üzerine samimi sohbetler gerçekleştirdi. Yoğun ilgi gören buluşmada yazar, okurlarıyla birebir iletişim kurma fırsatı buldu.",
+    news3p2: "Etkinlik sonunda katılımcılara teşekkür eden Azreug, bu tür buluşmaların yazarlık yolculuğuna ayrı bir anlam kattığını ifade etti. Okuyucularıyla kurduğu bağın, yeni eserleri için de ilham kaynağı olduğunu belirtti."
+  },
+  fr: {
+    heroText: "écrivaine traductrice voyageuse",
+    menuHome: "accueil",
+    menuContact: "contact",
+    menuBio: "biographie",
+    menuBooks: "œuvres",
+    menuNews: "actualités",
+    menuInterviews: "entretiens",
+    menuAwards: "prix",
+    menuPhotos: "photos",
+    footerContact: "Contact",
+    footerTranslation: "Soutien en traduction",
+    footerBooks: "Œuvres",
+    footerPhotos: "Photos",
+    footerInterviews: "Entretiens",
+    footerAwards: "Prix",
+    footerNews: "Actualités",
+    news1p1: "Aujourd’hui, j’ai été reçue par Son Excellence l’Ambassadeur Mücahit KÜÇÜKYILMAZ. J’ai eu l’occasion de lui présenter mes livres écrits en turc et d’échanger avec lui. Je tiens également à lui exprimer ma gratitude pour les ouvrages dédicacés qu’il m’a offerts.",
+    news1p2: "Cette rencontre a été très précieuse pour moi, tant sur le plan littéraire que culturel. Je suis heureuse de partager ce souvenir qui occupe une place importante dans ma vie d’écrivaine.",
+    news2p1: "Le 29 septembre 2024, Asma Azreug a retrouvé ses lecteurs grâce à une interview approfondie publiée dans la presse arabe. Dans cet entretien, elle a raconté son parcours d’écrivaine, ses œuvres rédigées en turc et la place de l’écriture dans sa vie.",
+    news2p2: "Elle y a souligné que l’écriture est pour elle non seulement une forme d’expression, mais aussi un outil puissant qui lui permet d’explorer ses idées de manière plus profonde et plus créative. Cette interview a également mis en lumière la visibilité croissante de l’auteure dans les milieux littéraires internationaux.",
+    news3p1: "Lors d’un événement spécial organisé avec ses lecteurs, Asma Azreug a eu des échanges sincères sur la littérature et l’écriture pendant sa séance de dédicace. Très suivie, cette rencontre lui a permis de communiquer directement avec ses lecteurs.",
+    news3p2: "À la fin de l’événement, Azreug a remercié les participants et a déclaré que ce type de rencontre donne un sens particulier à son parcours d’écrivaine. Elle a également indiqué que le lien qu’elle établit avec ses lecteurs est une source d’inspiration pour ses nouvelles œuvres."
+  },
+  ar: {
+    heroText: "كاتبة مترجمة رحّالة",
+    menuHome: "الرئيسية",
+    menuContact: "اتصال",
+    menuBio: "السيرة الذاتية",
+    menuBooks: "الأعمال",
+    menuNews: "الأخبار",
+    menuInterviews: "المقابلات",
+    menuAwards: "الجوائز",
+    menuPhotos: "الصور",
+    footerContact: "اتصال",
+    footerTranslation: "دعم الترجمة",
+    footerBooks: "الأعمال",
+    footerPhotos: "الصور",
+    footerInterviews: "المقابلات",
+    footerAwards: "الجوائز",
+    footerNews: "الأخبار",
+    news1p1: "اليوم حظيت بشرف الاستقبال من طرف سعادة السفير مجاهد كوتشوك يلماز. وقد أتيحت لي الفرصة لتقديم كتبي التي ألفتها باللغة التركية والتحدث معه. كما أود أن أتقدم له بجزيل الشكر على إهدائي أعماله الموقعة.",
+    news1p2: "كان هذا اللقاء ثمينًا جدًا بالنسبة لي من الناحيتين الأدبية والثقافية. ويسعدني أن أشارك هذه الذكرى التي تحتل مكانة مهمة في حياتي الأدبية.",
+    news2p1: "التقت أسما أزروغ بقرائها من جديد من خلال مقابلة شاملة نُشرت في الصحافة العربية بتاريخ 29 سبتمبر 2024. وفي هذه المقابلة تحدثت عن رحلتها في الكتابة، وأعمالها التي ألفتها باللغة التركية، ومكانة الكتابة في حياتها.",
+    news2p2: "وأكدت في الحوار أن الكتابة ليست بالنسبة لها مجرد وسيلة للتعبير، بل هي أيضًا أداة قوية تساعدها على استكشاف أفكارها بشكل أعمق وأكثر إبداعًا. كما أظهرت هذه المقابلة الحضور المتزايد للكاتبة في الأوساط الأدبية الدولية.",
+    news3p1: "خلال فعالية خاصة جُمعت فيها مع قرائها، أجرت أسما أزروغ أحاديث ودية حول الأدب والكتابة في يوم التوقيع. وقد شهد اللقاء إقبالًا كبيرًا، ما أتاح لها فرصة التواصل المباشر مع قرائها.",
+    news3p2: "وفي ختام الفعالية، شكرت أزروغ المشاركين وأكدت أن مثل هذه اللقاءات تضفي معنى خاصًا على رحلتها الأدبية. كما أوضحت أن العلاقة التي تبنيها مع قرائها تشكل مصدر إلهام لأعمالها الجديدة."
+  }
+};
+
+function changeLang(lang, el) {
+  document.querySelectorAll(".lang-tab").forEach(tab => {
+    tab.classList.remove("active");
+  });
+
+  if (el) el.classList.add("active");
+
+  localStorage.setItem("siteLang", lang);
+
+  document.getElementById("hero-text").innerText = translations[lang].heroText;
+
+  document.getElementById("menu-home").innerText = translations[lang].menuHome;
+  document.getElementById("menu-contact").innerText = translations[lang].menuContact;
+  document.getElementById("menu-bio").innerText = translations[lang].menuBio;
+  document.getElementById("menu-books").innerText = translations[lang].menuBooks;
+  document.getElementById("menu-news").innerText = translations[lang].menuNews;
+  document.getElementById("menu-interviews").innerText = translations[lang].menuInterviews;
+  document.getElementById("menu-awards").innerText = translations[lang].menuAwards;
+  document.getElementById("menu-photos").innerText = translations[lang].menuPhotos;
+
+  document.getElementById("footer-contact").innerText = translations[lang].footerContact;
+  document.getElementById("footer-translation").innerText = translations[lang].footerTranslation;
+  document.getElementById("footer-books").innerText = translations[lang].footerBooks;
+  document.getElementById("footer-photos").innerText = translations[lang].footerPhotos;
+  document.getElementById("footer-interviews").innerText = translations[lang].footerInterviews;
+  document.getElementById("footer-awards").innerText = translations[lang].footerAwards;
+  document.getElementById("footer-news").innerText = translations[lang].footerNews;
+
+  document.getElementById("news1-p1").innerText = translations[lang].news1p1;
+  document.getElementById("news1-p2").innerText = translations[lang].news1p2;
+  document.getElementById("news2-p1").innerText = translations[lang].news2p1;
+  document.getElementById("news2-p2").innerText = translations[lang].news2p2;
+  document.getElementById("news3-p1").innerText = translations[lang].news3p1;
+  document.getElementById("news3-p2").innerText = translations[lang].news3p2;
+
+  document.documentElement.lang = lang;
+
+  if (lang === "ar") {
+    document.querySelectorAll(".haber-icerik").forEach(item => {
+      item.style.direction = "rtl";
+      item.style.textAlign = "right";
+    });
+  } else {
+    document.querySelectorAll(".haber-icerik").forEach(item => {
+      item.style.direction = "ltr";
+      item.style.textAlign = "left";
+    });
+  }
+}window.addEventListener("DOMContentLoaded", () => {
+  const savedLang = localStorage.getItem("siteLang") || "tr";
+
+  document.querySelectorAll(".lang-tab").forEach(tab => {
+    const onclickText = tab.getAttribute("onclick") || "";
+    if (onclickText.includes(`changeLang('${savedLang}'`)) {
+      changeLang(savedLang, tab);
+    }
+  });
+});
+</script>
+<script>
+window.addEventListener("DOMContentLoaded", () => {
+    const strip = document.querySelector(".bottom-strip");
+
+    if (strip && !document.querySelector(".powered-text")) {
+        const powered = document.createElement("div");
+        powered.className = "powered-text";
+        powered.innerText = "powered by Emir Kulaz";
+
+        const inner = strip.querySelector(".bottom-inner") || strip;
+        inner.appendChild(powered);
+    }
+});
+</script>
 </body>
 </html>
